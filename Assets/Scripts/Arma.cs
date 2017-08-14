@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Arma : Equipables {
 
-    //oneHanded, twoHanded, ranged, escudo
-
+   struct statsArma
+    {
+        int defense;
+        int attack;
+    }
 }
