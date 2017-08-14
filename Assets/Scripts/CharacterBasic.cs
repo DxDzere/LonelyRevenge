@@ -7,8 +7,8 @@ public class CharacterBasic : MonoBehaviour
     [SerializeField]
     struct baseStats
     {
-        int healt;
-        int healtCap;
+        int health;
+        int healthCap;
         int attack;
         int defense;
         int mana;

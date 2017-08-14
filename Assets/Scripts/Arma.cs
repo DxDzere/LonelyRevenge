@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBase : CharacterBasic {
-    
-    //ia
-    //drop
-    //quest
+public class Arma : Equipables {
+
+    //oneHanded, twoHanded, ranged, escudo
+
 }

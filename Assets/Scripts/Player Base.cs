@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerBase : MonoBehaviour
+public class PlayerBase : CharacterBasic
 {
     [SerializeField]
     struct modificableStats
     {
-        int healtCap;
+        int healthCap;
         int attack;
         int defense;
         int manaCap;

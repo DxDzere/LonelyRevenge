@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBase : CharacterBasic {
+public class Items : MonoBehaviour{
     
-    //ia
-    //drop
-    //quest
 }

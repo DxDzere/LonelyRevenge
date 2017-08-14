@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBase : CharacterBasic {
-    
-    //ia
-    //drop
-    //quest
+public class Equipables : Items {
+
+	
 }
