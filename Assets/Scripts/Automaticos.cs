@@ -4,5 +4,11 @@ using UnityEngine;
 
 public class Automaticos : Consumibles{
 
+    enum pociones {pocionVida, pocionMana}
 
+    struct statRecarga
+    {
+        int health;
+        int mana;
+    }
 }

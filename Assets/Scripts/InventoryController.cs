@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Constantes : Consumibles{
+public class InventoryController : MonoBehaviour {
 
-    
+    public Items[] inventory; 
 }

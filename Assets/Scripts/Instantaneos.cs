@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Instantaneos : Consumibles{
 
-	
+	//enum itemsInstantaneos {antidoto, pergaminoTeleport, elixirVida, elixirMana}
 }
