@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Gemas : Consumibles{
 
-	
+	enum tipoGema {gemasComunes, gemasElementales}
 }

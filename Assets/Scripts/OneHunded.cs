@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OneHundred : Arma {
+public class OneHunded : Arma {
 
-	
+	enum tipoOneHandedWeapon {espada, daga, hacha}
 }

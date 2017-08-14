@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TwoHandred : Arma {
+public class GemasElementales : Gemas {
 
 	
 }
