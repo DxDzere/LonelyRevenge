@@ -9,10 +9,14 @@ public class CharacterBasic : MonoBehaviour
     {
         int health;
         int healthCap;
-        int attack;
+        float physicalDamage;
+        float abilityDamage;
+        int strength;
         int defense;
         int mana;
         int manaCap;
+        float movementSpeed;
+        float attackSpeed;
         int dexterity;
     }
     string name;

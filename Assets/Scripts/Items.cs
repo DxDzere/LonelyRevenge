@@ -4,4 +4,33 @@ using UnityEngine;
 
 public class Items : MonoBehaviour{
     
+    public virtual void Use()
+    {
+
+    }
+
+    public virtual void Equip()
+    {
+
+    }
+
+    public virtual void Throw()
+    {
+
+    }
+
+    public virtual void Sell()
+    {
+
+    }
+
+    public virtual void Upgrade()
+    {
+
+    }
+
+    public virtual void Repir()
+    {
+
+    }
 }

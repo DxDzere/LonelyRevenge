@@ -8,7 +8,7 @@ public class PlayerBase : CharacterBasic
     struct modificableStats
     {
         int healthCap;
-        int attack;
+        int strength;
         int defense;
         int manaCap;
         int dexterity;
