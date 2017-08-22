@@ -8,4 +8,19 @@ public class Equipables : Items {
     {
         base.Equip();
     }
+
+    public override void Throw()
+    {
+        base.Throw();
+    }
+
+    public override void Sell()
+    {
+        base.Sell();
+    }
+
+    public override void Upgrade()
+    {
+        base.Upgrade();
+    }
 }

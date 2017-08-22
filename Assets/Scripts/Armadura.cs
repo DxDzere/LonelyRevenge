@@ -11,4 +11,9 @@ public class Armadura : Equipables {
         int dexterity;
         int defense;
     }
+
+    public override void Repair()
+    {
+        base.Repair();
+    }
 }

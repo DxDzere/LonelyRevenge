@@ -9,11 +9,6 @@ public class Items : MonoBehaviour{
 
     }
 
-    public virtual void Equip()
-    {
-
-    }
-
     public virtual void Throw()
     {
 
@@ -24,12 +19,17 @@ public class Items : MonoBehaviour{
 
     }
 
+    public virtual void Equip()
+    {
+
+    }
+
     public virtual void Upgrade()
     {
 
     }
 
-    public virtual void Repir()
+    public virtual void Repair()
     {
 
     }
