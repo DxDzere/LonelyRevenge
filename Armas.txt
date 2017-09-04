@@ -1,0 +1,80 @@
+{
+   "Armas":
+   {
+      "Espada Inicial":
+      {
+         "name":"Inicial",
+         "descripcion":"",
+         "Stats":
+	 {
+            "Ataque":7-10
+         }
+      },
+      "Espada Tier1":
+      {
+         "name":"Tier1",
+         "descripcion":"",
+         "Stats":
+	 {
+            "Ataque":14-20
+         }
+      },
+      "Espada Tier2":
+      {
+         "name":"Tier2",
+         "descripcion":"",
+         "Stats":
+	 {
+            "Ataque":28-40
+         }
+      },
+      "Espada Tier3":
+      {
+         "name":"Tier3",
+         "descripcion":"",
+         "Stats":
+	 {
+            "Ataque":56-80
+         }
+      },
+   }
+   "Escudos":
+   {
+      "Escudo Inicial":
+      {
+         "name":"Inicial",
+         "descripcion":"",
+         "Stats":
+	 {
+            "Defensa":7
+         }
+      },
+      "Escudo Tier1":
+      {
+         "name":"Tier1",
+         "descripcion":"",
+         "Stats":
+	 {
+            "Defensa":14
+         }
+      },
+      "Escudo Tier2":
+      {
+         "name":"Tier2",
+         "descripcion":"",
+         "Stats":
+	 {
+            "Defensa":28
+         }
+      },
+      "Escudo Tier3":
+      {
+         "name":"Tier3",
+         "descripcion":"",
+         "Stats":
+	 {
+            "Defensa":56
+         }
+      },
+   }
+}

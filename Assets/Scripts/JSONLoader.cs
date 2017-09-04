@@ -28,10 +28,10 @@ public class JSONLoader : MonoBehaviour {
     {
         JSONObject jsonObj = new JSONObject(_json);
         JSONObject jsonObjAux = jsonObj;
-        int playerCount = jsonObjAux.GetField("Personaje").Count;
+        int playerCount = jsonObjAux.GetField("Personajes").Count;
         playerArray = new PlayerBase[playerCount];
 
-        for (int i =0; i < jsonObjAux.GetField("Personaje").Count; i++)
+        for (int i =0; i < jsonObjAux.GetField("Personajes").Count; i++)
         {
             jsonObjAux = jsonObj;
             playerArray[i].name = (jsonObj.HasField("name")) ? jsonObj.GetField("name").str : string.Empty;
@@ -73,10 +73,10 @@ public class JSONLoader : MonoBehaviour {
     {
         JSONObject jsonObj = new JSONObject(_json);
         JSONObject jsonObjAux = jsonObj;
-        int armasCount = jsonObjAux.GetField("armas").Count;
+        int armasCount = jsonObjAux.GetField("Armas").Count;
         armasArray = new Arma[armasCount];
 
-        for (int i = 0; i < jsonObjAux.GetField("armas").Count; i++)
+        for (int i = 0; i < jsonObjAux.GetField("Armas").Count; i++)
         {
             jsonObjAux = jsonObj;
             armasArray[i].name = (jsonObj.HasField("name")) ? jsonObj.GetField("name").str : string.Empty;
@@ -98,10 +98,10 @@ public class JSONLoader : MonoBehaviour {
     {
         JSONObject jsonObj = new JSONObject(_json);
         JSONObject jsonObjAux = jsonObj;
-        int armasCount = jsonObjAux.GetField("armas").Count;
-        armasArray = new Arma[armasCount];
+        int armadurasCount = jsonObjAux.GetField("Armaduras").Count;
+        armadurasArray = new Armadura[armadurasCount];
 
-        for (int i = 0; i < jsonObjAux.GetField("armas").Count; i++)
+        for (int i = 0; i < jsonObjAux.GetField("Armaduras").Count; i++)
         {
             jsonObjAux = jsonObj;
             armadurasArray[i].name = (jsonObj.HasField("name")) ? jsonObj.GetField("name").str : string.Empty;
