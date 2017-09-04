@@ -5,11 +5,12 @@ using UnityEngine;
 public class Armadura : Equipables {
 
     enum partesArmadura { casco, pechera, grebas, guantes, pantalones};
+    public statsArmadura statsBasicArm;
 
-    struct statsArmadura
+    public struct statsArmadura
     {
-        int dexterity;
-        int defense;
+        public float dexterity;
+        public float defense;
     }
 
     public override void Repair()

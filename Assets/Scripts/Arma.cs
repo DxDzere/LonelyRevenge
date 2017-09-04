@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Arma : Equipables {
+    
+    public string clase;
+    public statsArma statsBasicA;
 
-   struct statsArma
+    public struct statsArma
     {
-        int defense;
-        int attack;
+        public float defense;
+        public float attack;
+        public float dexterity;
     }
 }

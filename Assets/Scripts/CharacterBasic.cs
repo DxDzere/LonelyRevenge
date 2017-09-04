@@ -5,6 +5,8 @@ using UnityEngine;
 public class CharacterBasic : MonoBehaviour
 {
     [SerializeField]
+
+    public type kind;
     struct baseStats
     {
         int health;
@@ -19,11 +21,11 @@ public class CharacterBasic : MonoBehaviour
         float attackSpeed;
         int dexterity;
     }
-    string name;
-    enum type {Warrior, SpellCaster, Rogue, Priest, Archer}
+    public string name;
+    public enum type {Warrior, SpellCaster, Rogue, Priest, Archer}
     enum state {Idle, Walk, Run, Attack, Dead, Hit, Jump}
     //anims
     //weapons
-    string description;
+    public string description;
     Vector3 pos;
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Equipables : Items {
 
+    public float lvl;
+
     public override void Equip()
     {
         base.Equip();

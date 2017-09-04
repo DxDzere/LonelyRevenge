@@ -5,16 +5,20 @@ using UnityEngine;
 public class PlayerBase : CharacterBasic
 {
     [SerializeField]
-    struct modificableStats
+
+    public playerStats stats;
+    
+    public struct playerStats
     {
-        int healthCap;
-        int strength;
-        int defense;
-        int manaCap;
-        int dexterity;
+        public float healthCap;
+        public float strength;
+        public float defense;
+        public float manaCap;
+        public float dexterity;
     }
     //controller
-    int xp, xpCap, lvl, lvlCap;
+    public float xp, xpCap, lvl, lvlCap;
     //inventory
-    //stat modification
+
+
 }

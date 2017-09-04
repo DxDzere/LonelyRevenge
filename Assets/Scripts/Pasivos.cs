@@ -5,13 +5,14 @@ using UnityEngine;
 public class Pasivos : Consumibles {
 
 	enum pocionesPasivas {pocionFuerza, pocionAgilidad, pocionDefensa, pocionVitalidad, pocionEnergia, posionInmunidad}
+    public baseStats statsBase;
 
-    struct baseStats
+    public struct baseStats
     {
-        int health;
-        int attack;
-        int defense;
-        int mana;
-        int dexterity;
+        float health;
+        float attack;
+        float defense;
+        float mana;
+        float dexterity;
     }
 }
