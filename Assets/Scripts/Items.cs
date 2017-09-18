@@ -6,8 +6,11 @@ public class Items : MonoBehaviour{
 
     public string name;
     public string description;
-    
-    public virtual void Use()
+
+    public PlayerBase.playerStats stats;
+
+
+    public virtual void Use(PlayerBase _player)
     {
 
     }
@@ -22,7 +25,7 @@ public class Items : MonoBehaviour{
 
     }
 
-    public virtual void Equip()
+    public virtual void Equip(PlayerBase _player)
     {
 
     }

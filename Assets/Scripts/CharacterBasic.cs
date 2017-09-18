@@ -6,23 +6,23 @@ public class CharacterBasic : MonoBehaviour
 {
     [SerializeField]
 
-    public type kind;
-    struct baseStats
+    public baseStats playerBaseStats;
+    public characterType kind;
+    public struct baseStats
     {
-        int health;
-        int healthCap;
-        float physicalDamage;
-        float abilityDamage;
-        int strength;
-        int defense;
-        int mana;
-        int manaCap;
-        float movementSpeed;
-        float attackSpeed;
-        int dexterity;
+        public float health;
+        public float healthCap;
+        public float physicalDamage;
+        public float abilityDamage;
+        public float defense;
+        public float mana;
+        public float manaCap;
+        public float movementSpeed;
+        public float attackSpeed;
+        public float staminaCap;
     }
     public string name;
-    public enum type {Warrior, SpellCaster, Rogue, Priest, Archer}
+    public enum characterType {Warrior, SpellCaster, Rogue, Priest, Archer, Default}
     enum state {Idle, Walk, Run, Attack, Dead, Hit, Jump}
     //anims
     //weapons

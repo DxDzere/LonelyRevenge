@@ -1,80 +1,245 @@
 {
-   "Armas":
-   {
-      "Espada Inicial":
-      {
-         "name":"Inicial",
-         "descripcion":"",
-         "Stats":
-	 {
-            "Ataque":7-10
-         }
-      },
-      "Espada Tier1":
-      {
-         "name":"Tier1",
-         "descripcion":"",
-         "Stats":
-	 {
-            "Ataque":14-20
-         }
-      },
-      "Espada Tier2":
-      {
-         "name":"Tier2",
-         "descripcion":"",
-         "Stats":
-	 {
-            "Ataque":28-40
-         }
-      },
-      "Espada Tier3":
-      {
-         "name":"Tier3",
-         "descripcion":"",
-         "Stats":
-	 {
-            "Ataque":56-80
-         }
-      },
+	"Armas":
+	{
+		"Espada Inicial":
+		{
+			"name":"Espada Inicial",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"AtaqueMin":7,
+				"AtaqueMax":10,
+				"Defensa":0
+			}
+		},
+		"Espada Tier1":
+		{
+			"name":"Espada Tier1",
+			"descripcion":"",
+			"level":20,
+			"Stats":
+			{
+				"AtaqueMin":14,
+				"AtaqueMax":20,
+				"Defensa":0
+			}
+		},
+		"Espada Tier2":
+		{
+			"name":"Espada Tier2",
+			"descripcion":"",
+			"level":40,
+			"Stats":
+			{
+				"AtaqueMin":28,
+				"AtaqueMax":40,
+				"Defensa":0
+			}
+		},
+		"Espada Tier3":
+		{
+			"name":"Espada Tier3",
+			"descripcion":"",
+			"level":60,
+			"Stats":
+			{
+				"AtaqueMin":56,
+				"AtaqueMax":80,
+				"Defensa":0
+			}
+		},
+		"Daga Inicial":
+		{
+			"name":"Daga Inicial",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"AtaqueMin":28,
+				"AtaqueMax":40,
+				"Defensa":0
+			}
+		},
+		"Daga Tier1":
+		{
+			"name":"Daga Tier1",
+			"descripcion":"",
+			"level":20,
+			"Stats":
+			{
+				"AtaqueMin":28,
+				"AtaqueMax":40,
+				"Defensa":0
+			}
+		},
+		"Daga Tier2":
+		{
+			"name":"Daga Tier2",
+			"descripcion":"",
+			"level":40,
+			"Stats":
+			{
+				"AtaqueMin":28,
+				"AtaqueMax":40,
+				"Defensa":0
+			}
+		},
+		"Daga Tier3":
+		{
+			"name":"Daga Tier3",
+			"descripcion":"",
+			"level":60,
+			"Stats":
+			{
+				"AtaqueMin":28,
+				"AtaqueMax":40,
+				"Defensa":0
+			}
+		},
+		"Arco Inicial":
+		{
+			"name":"Arco Inicial",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"AtaqueMin":28,
+				"AtaqueMax":40,
+				"Defensa":0
+			}
+		},
+		"Arco Tier1":
+		{
+			"name":"Arco Tier1",
+			"descripcion":"",
+			"level":20,
+			"Stats":
+			{
+				"AtaqueMin":28,
+				"AtaqueMax":40,
+				"Defensa":0
+			}
+		},
+		"Arco Tier2":
+		{
+			"name":"Arco Tier2",
+			"descripcion":"",
+			"level":40,
+			"Stats":
+			{
+				"AtaqueMin":28,
+				"AtaqueMax":40,
+				"Defensa":0
+			}
+		},
+		"Arco Tier3":
+		{
+			"name":"Arco Tier3",
+			"descripcion":"",
+			"level":60,
+			"Stats":
+			{
+				"AtaqueMin":28,
+				"AtaqueMax":40,
+				"Defensa":0
+			}
+		},
+		"Báculo Inicial":
+		{
+			"name":"Báculo Inicial",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"AtaqueMin":28,
+				"AtaqueMax":40,
+				"Defensa":0
+			}
+		},
+		"Báculo Tier1":
+		{
+			"name":"Báculo Tier1",
+			"descripcion":"",
+			"level":20,
+			"Stats":
+			{
+				"AtaqueMin":28,
+				"AtaqueMax":40,
+				"Defensa":0
+			}
+		},
+		"Báculo Tier2":
+		{
+			"name":"Báculo Tier2",
+			"descripcion":"",
+			"level":40,
+			"Stats":
+			{
+				"AtaqueMin":28,
+				"AtaqueMax":40,
+				"Defensa":0
+			}
+		},
+		"Báculo Tier3":
+		{
+			"name":"Báculo Tier3",
+			"descripcion":"",
+			"level":60,
+			"Stats":
+			{
+				"AtaqueMin":28,
+				"AtaqueMax":40,
+				"Defensa":0
+			}
+		},
+		"Escudo Inicial":
+		{
+			"name":"Escudo Inicial",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"AtaqueMin":0,
+				"AtaqueMax":0,
+				"Defensa":5
+			}
+		},
+		"Escudo Tier1":
+		{
+			"name":"Escudo Tier1",
+			"descripcion":"",
+			"level":20,
+			"Stats":
+			{
+				"AtaqueMin":0,
+				"AtaqueMax":0,
+				"Defensa":10
+			}
+		},
+		"Escudo Tier2":
+		{
+			"name":"Escudo Tier2",
+			"descripcion":"",
+			"level":40,
+			"Stats":
+			{
+				"AtaqueMin":0,
+				"AtaqueMax":0,
+				"Defensa":15
+			}
+		},
+		"Escudo Tier3":
+		{
+			"name":"Escudo Tier3",
+			"descripcion":"",
+			"level":60,
+			"Stats":
+			{
+				"AtaqueMin":0,
+				"AtaqueMax":0,
+				"Defensa":20
+			}
+		}
    }
-   "Escudos":
-   {
-      "Escudo Inicial":
-      {
-         "name":"Inicial",
-         "descripcion":"",
-         "Stats":
-	 {
-            "Defensa":7
-         }
-      },
-      "Escudo Tier1":
-      {
-         "name":"Tier1",
-         "descripcion":"",
-         "Stats":
-	 {
-            "Defensa":14
-         }
-      },
-      "Escudo Tier2":
-      {
-         "name":"Tier2",
-         "descripcion":"",
-         "Stats":
-	 {
-            "Defensa":28
-         }
-      },
-      "Escudo Tier3":
-      {
-         "name":"Tier3",
-         "descripcion":"",
-         "Stats":
-	 {
-            "Defensa":56
-         }
-      },
-   }
-}
+},

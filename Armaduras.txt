@@ -1,0 +1,135 @@
+{
+   "Armaduras":
+   {
+		"Casco Pesado":
+		{
+			"name":"Casco Pesado",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"Defensa":0
+			}
+		},
+		"Casco Liviano":
+		{
+			"name":"Casco Liviano",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"Defensa":0
+			}
+		},
+		"Sombrero":
+		{
+			"name":"Sombrero",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"Defensa":0
+			}
+		},
+		"Pechera Pesada":
+		{
+			"name":"Pechera Pesada",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"Defensa":0
+			}
+		},
+		"Pechera Liviana":
+		{
+			"name":"Pechera Liviana",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"Defensa":0
+			}
+		},
+		"Tunica":
+		{
+			"name":"Tunica",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"Defensa":0
+			}
+		},
+		"Guantes Pesados":
+		{
+			"name":"Guantes Pesados",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"Defensa":0
+			}
+		},
+		"Guantes Livianos":
+		{
+			"name":"Guantes Livianos",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"Defensa":0
+			}
+		},
+		"Perneras Pesadas":
+		{
+			"name":"Perneras Pesadas",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"Defensa":0
+			}
+		},
+		"Perneras Livianas":
+		{
+			"name":"Perneras Livianas",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"Defensa":0
+			}
+		},
+		"Pantalones":
+		{
+			"name":"Pantalones",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"Defensa":0
+			}
+		},
+		"Grebas Pesadas":
+		{
+			"name":"Grebas Pesadas",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"Defensa":0
+			}
+		},
+		"Grebas Livianas":
+		{
+			"name":"Grebas Livianas",
+			"descripcion":"",
+			"level":1,
+			"Stats":
+			{
+				"Defensa":0
+			}
+		}
+	}
+},
