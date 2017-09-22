@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Armadura : Equipables
 {
-    enum partesArmadura { casco, pechera, grebas, guantes, pantalones};
+    enum partesArmadura { casco, pechera, perneras, guantes, pantalones, Default};
     public statsArmadura statsBasicArm;
 
     public struct statsArmadura
