@@ -17,8 +17,14 @@ public class JSONLoader : MonoBehaviour {
         string jsonPlayers = LoadText("Personajes.txt");
         playerArray = LoadJsonPersonaje(jsonPlayers);
 
-     /* string jsonItems = LoadText("Items.txt");
-        itemsArray = LoadJsonItems(jsonItems);*/
+        string jsonItems = LoadText("Items.txt");
+        itemsArray = LoadJsonItems(jsonItems);
+
+        string jsonArmas = LoadText("Armas.txt");
+        itemsArray = LoadJsonItems(jsonItems);
+
+        string jsonArmaduras = LoadText("Armaduras.txt");
+        itemsArray = LoadJsonItems(jsonItems);
     }
 
     private string LoadText(string _path)
@@ -45,7 +51,8 @@ public class JSONLoader : MonoBehaviour {
             playerArray[i].name = (jsonObjAux[i].HasField("name")) ? jsonObjAux[i].GetField("name").str : string.Empty;
             playerArray[i].description = (jsonObjAux[i].HasField("descripcion")) ? jsonObjAux[i].GetField("descripcion").str : string.Empty;
             playerArray[i].kind = (jsonObjAux[i].HasField("Kind")) ? (CharacterBasic.characterType)System.Enum.Parse(typeof(CharacterBasic.characterType), jsonObjAux[i].GetField("Kind").str) : CharacterBasic.characterType.Default;
-           
+            playerArray[i].money = (jsonObjAux.HasField("Money")) ? jsonObjAux.GetField("Money").n : 0;
+
             Debug.Log(playerArray[i].name);
             Debug.Log(playerArray[i].description);
 
@@ -78,6 +85,8 @@ public class JSONLoader : MonoBehaviour {
             jsonObjAux = jsonObj;
             itemsArray[i].name = (jsonObjAux[i].GetField("name")) ? jsonObjAux[i].GetField("name").str : string.Empty;
             itemsArray[i].description = (jsonObjAux[i].GetField("Description")) ? jsonObjAux[i].GetField("Description").str : string.Empty;
+            itemsArray[i].priceSell = (jsonObjAux[i].HasField("PriceSell")) ? jsonObjAux[i].GetField("PriceSell").n : 0;
+            itemsArray[i].priceBuy = (jsonObjAux[i].HasField("PriceBuy")) ? jsonObjAux[i].GetField("PriceBuy").n : 0;
         }
 
         return itemsArray;
@@ -95,14 +104,23 @@ public class JSONLoader : MonoBehaviour {
             jsonObjAux = jsonObj;
             armasArray[i].name = (jsonObjAux[i].HasField("name")) ? jsonObjAux[i].GetField("name").str : string.Empty;
             armasArray[i].description = (jsonObjAux[i].HasField("Description")) ? jsonObjAux[i].GetField("Description").str : string.Empty;
+            armasArray[i].priceSell = (jsonObjAux[i].HasField("PriceSell")) ? jsonObjAux[i].GetField("PriceSell").n : 0;
+            armasArray[i].priceBuy = (jsonObjAux[i].HasField("PriceBuy")) ? jsonObjAux[i].GetField("PriceBuy").n : 0;
+            armasArray[i].priceRepair = (jsonObjAux[i].HasField("PriceRepair")) ? jsonObjAux[i].GetField("PriceRepair").n : 0;
+            armasArray[i].priceUpgrade = (jsonObjAux[i].HasField("PriceUpgrade")) ? jsonObjAux[i].GetField("PriceUpgrade").n : 0;
+            armasArray[i].grade = (jsonObjAux[i].HasField("Grade")) ? jsonObjAux[i].GetField("Grade").n : 0;
+            armasArray[i].upgradeSuccessRate = (jsonObjAux[i].HasField("UpgradeSuccessRate")) ? jsonObjAux[i].GetField("UpgradeSuccessRate").n : 0;
             armasArray[i].lvl = (jsonObjAux[i].HasField("Level")) ? jsonObjAux[i].GetField("Level").n : 0;
             if (jsonObj.HasField("Stats"))
             {
                 jsonObj = jsonObj.GetField("Stat");
-                armasArray[i].statsBasicA.attackMin = (jsonObj.HasField("AtaqueMin")) ? jsonObjAux[i].GetField("AtaqueMin").n : 0;
-                armasArray[i].statsBasicA.attackMax = (jsonObj.HasField("AtaqueMax")) ? jsonObjAux[i].GetField("AtaqueMax").n : 0;
+                armasArray[i].statsBasicA.pAttackMin = (jsonObj.HasField("P. AtaqueMin")) ? jsonObjAux[i].GetField("P. AtaqueMin").n : 0;
+                armasArray[i].statsBasicA.pAttackMax = (jsonObj.HasField("P. AtaqueMax")) ? jsonObjAux[i].GetField("P. AtaqueMax").n : 0;
+                armasArray[i].statsBasicA.aAttackMin = (jsonObj.HasField("A. AtaqueMin")) ? jsonObjAux[i].GetField("A. AtaqueMin").n : 0;
+                armasArray[i].statsBasicA.aAttackMax = (jsonObj.HasField("A. AtaqueMax")) ? jsonObjAux[i].GetField("A. AtaqueMax").n : 0;
                 armasArray[i].statsBasicA.defense = (jsonObj.HasField("Defense")) ? jsonObjAux[i].GetField("Defense").n : 0;
-                armasArray[i].statsBasicA.dexterity = (jsonObj.HasField("Dexterity")) ? jsonObjAux[i].GetField("Dexterity").n : 0;
+                armasArray[i].statsBasicA.attackSpeed = (jsonObj.HasField("AttackSpeed")) ? jsonObjAux[i].GetField("AttackSpeed").n : 0;
+                armasArray[i].statsBasicA.movementSpeed = (jsonObj.HasField("MovementSpeed")) ? jsonObjAux[i].GetField("MovementSpeed").n : 0;
             }
         }
 
@@ -121,12 +139,18 @@ public class JSONLoader : MonoBehaviour {
             jsonObjAux = jsonObj;
             armadurasArray[i].name = (jsonObjAux[i].HasField("name")) ? jsonObjAux[i].GetField("name").str : string.Empty;
             armadurasArray[i].description = (jsonObjAux[i].HasField("Description")) ? jsonObjAux[i].GetField("Description").str : string.Empty;
+            armadurasArray[i].priceSell = (jsonObjAux[i].HasField("PriceSell")) ? jsonObjAux[i].GetField("PriceSell").n : 0;
+            armadurasArray[i].priceBuy = (jsonObjAux[i].HasField("PriceBuy")) ? jsonObjAux[i].GetField("PriceBuy").n : 0;
+            armadurasArray[i].priceRepair = (jsonObjAux[i].HasField("PriceRepair")) ? jsonObjAux[i].GetField("PriceRepair").n : 0;
+            armadurasArray[i].priceUpgrade = (jsonObjAux[i].HasField("PriceUpgrade")) ? jsonObjAux[i].GetField("PriceUpgrade").n : 0;
+            armadurasArray[i].grade = (jsonObjAux[i].HasField("Grade")) ? jsonObjAux[i].GetField("Grade").n : 0;
+            armadurasArray[i].upgradeSuccessRate = (jsonObjAux[i].HasField("UpgradeSuccessRate")) ? jsonObjAux[i].GetField("UpgradeSuccessRate").n : 0;
             armadurasArray[i].lvl = (jsonObjAux[i].HasField("Level")) ? jsonObjAux[i].GetField("Level").n : 0;
             if (jsonObj.HasField("Stats"))
             {
                 jsonObj = jsonObj.GetField("Stat");
                 armadurasArray[i].statsBasicArm.defense = (jsonObj.HasField("Defense")) ? jsonObjAux[i].GetField("Defense").n : 0;
-                armadurasArray[i].statsBasicArm.dexterity = (jsonObj.HasField("Dexterity")) ? jsonObjAux[i].GetField("Dexterity").n : 0;
+                armadurasArray[i].statsBasicArm.movementSpeed = (jsonObj.HasField("MovementSpeed")) ? jsonObjAux[i].GetField("MovementSpeed").n : 0;
                 armadurasArray[i].statsBasicArm.durabilityCap = (jsonObj.HasField("Durabilidad")) ? jsonObjAux[i].GetField("Durabilidad").n : 0;
             }
         }

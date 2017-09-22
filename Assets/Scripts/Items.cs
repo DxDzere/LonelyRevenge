@@ -6,6 +6,8 @@ public class Items : MonoBehaviour{
 
     public string name;
     public string description;
+    public float priceSell;
+    public float priceBuy;
 
     public PlayerBase.playerStats stats;
 
@@ -20,7 +22,7 @@ public class Items : MonoBehaviour{
 
     }
 
-    public virtual void Sell()
+    public virtual void Sell(PlayerBase _player)
     {
 
     }
@@ -30,12 +32,12 @@ public class Items : MonoBehaviour{
 
     }
 
-    public virtual void Upgrade()
+    public virtual void Upgrade(PlayerBase _player)
     {
 
     }
 
-    public virtual void Repair()
+    public virtual void Repair(PlayerBase _player)
     {
 
     }

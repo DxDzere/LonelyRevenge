@@ -7,12 +7,13 @@ public class PlayerBase : CharacterBasic
     [SerializeField]
 
     public playerStats stats;
+    public float money;
     
     public struct playerStats
     {
         public float healthCap;
         public float strength;
-        public float defense;
+        public float resist;
         public float manaCap;
         public float dexterity;
     }
