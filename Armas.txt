@@ -3,242 +3,442 @@
 	{
 		"Espada Inicial":
 		{
-			"name":"Espada Inicial",
-			"descripcion":"",
-			"level":1,
+			"Name":"Espada Inicial",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"AtaqueMin":7,
-				"AtaqueMax":10,
-				"Defensa":0
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Espada Tier1":
 		{
-			"name":"Espada Tier1",
-			"descripcion":"",
-			"level":20,
+			"Name":"Espada Tier1",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":20,
 			"Stats":
 			{
-				"AtaqueMin":14,
-				"AtaqueMax":20,
-				"Defensa":0
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Espada Tier2":
 		{
-			"name":"Espada Tier2",
-			"descripcion":"",
-			"level":40,
+			"Name":"Espada Tier2",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":40,
 			"Stats":
 			{
-				"AtaqueMin":28,
-				"AtaqueMax":40,
-				"Defensa":0
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Espada Tier3":
 		{
-			"name":"Espada Tier3",
-			"descripcion":"",
-			"level":60,
+			"Name":"Espada Tier3",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":60,
 			"Stats":
 			{
-				"AtaqueMin":56,
-				"AtaqueMax":80,
-				"Defensa":0
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Daga Inicial":
 		{
-			"name":"Daga Inicial",
-			"descripcion":"",
-			"level":1,
+			"Name":"Daga Inicial",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"AtaqueMin":28,
-				"AtaqueMax":40,
-				"Defensa":0
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Daga Tier1":
 		{
-			"name":"Daga Tier1",
-			"descripcion":"",
-			"level":20,
+			"Name":"Daga Tier1",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":20,
 			"Stats":
 			{
-				"AtaqueMin":28,
-				"AtaqueMax":40,
-				"Defensa":0
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Daga Tier2":
 		{
-			"name":"Daga Tier2",
-			"descripcion":"",
-			"level":40,
+			"Name":"Daga Tier2",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":40,
 			"Stats":
 			{
-				"AtaqueMin":28,
-				"AtaqueMax":40,
-				"Defensa":0
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Daga Tier3":
 		{
-			"name":"Daga Tier3",
-			"descripcion":"",
-			"level":60,
+			"Name":"Daga Tier3",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":60,
 			"Stats":
 			{
-				"AtaqueMin":28,
-				"AtaqueMax":40,
-				"Defensa":0
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Arco Inicial":
 		{
-			"name":"Arco Inicial",
-			"descripcion":"",
-			"level":1,
+			"Name":"Arco Inicial",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"AtaqueMin":28,
-				"AtaqueMax":40,
-				"Defensa":0
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Arco Tier1":
 		{
-			"name":"Arco Tier1",
-			"descripcion":"",
-			"level":20,
+			"Name":"Arco Tier1",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":20,
 			"Stats":
 			{
-				"AtaqueMin":28,
-				"AtaqueMax":40,
-				"Defensa":0
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Arco Tier2":
 		{
-			"name":"Arco Tier2",
-			"descripcion":"",
-			"level":40,
+			"Name":"Arco Tier2",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":40,
 			"Stats":
 			{
-				"AtaqueMin":28,
-				"AtaqueMax":40,
-				"Defensa":0
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Arco Tier3":
 		{
-			"name":"Arco Tier3",
-			"descripcion":"",
-			"level":60,
+			"Name":"Arco Tier3",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":60,
 			"Stats":
 			{
-				"AtaqueMin":28,
-				"AtaqueMax":40,
-				"Defensa":0
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Báculo Inicial":
 		{
-			"name":"Báculo Inicial",
-			"descripcion":"",
-			"level":1,
+			"Name":"Báculo Inicial",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"AtaqueMin":28,
-				"AtaqueMax":40,
-				"Defensa":0
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Báculo Tier1":
 		{
-			"name":"Báculo Tier1",
-			"descripcion":"",
-			"level":20,
+			"Name":"Báculo Tier1",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":20,
 			"Stats":
 			{
-				"AtaqueMin":28,
-				"AtaqueMax":40,
-				"Defensa":0
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Báculo Tier2":
 		{
-			"name":"Báculo Tier2",
-			"descripcion":"",
-			"level":40,
+			"Name":"Báculo Tier2",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":40,
 			"Stats":
 			{
-				"AtaqueMin":28,
-				"AtaqueMax":40,
-				"Defensa":0
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Báculo Tier3":
 		{
-			"name":"Báculo Tier3",
-			"descripcion":"",
-			"level":60,
+			"Name":"Báculo Tier3",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":60,
 			"Stats":
 			{
-				"AtaqueMin":28,
-				"AtaqueMax":40,
-				"Defensa":0
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Escudo Inicial":
 		{
-			"name":"Escudo Inicial",
-			"descripcion":"",
-			"level":1,
+			"Name":"Escudo Inicial",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"AtaqueMin":0,
-				"AtaqueMax":0,
-				"Defensa":5
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Escudo Tier1":
 		{
-			"name":"Escudo Tier1",
-			"descripcion":"",
-			"level":20,
+			"Name":"Escudo Tier1",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":20,
 			"Stats":
 			{
-				"AtaqueMin":0,
-				"AtaqueMax":0,
-				"Defensa":10
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Escudo Tier2":
 		{
-			"name":"Escudo Tier2",
-			"descripcion":"",
-			"level":40,
+			"Name":"Escudo Tier2",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":40,
 			"Stats":
 			{
-				"AtaqueMin":0,
-				"AtaqueMax":0,
-				"Defensa":15
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		},
 		"Escudo Tier3":
 		{
-			"name":"Escudo Tier3",
-			"descripcion":"",
-			"level":60,
+			"Name":"Escudo Tier3",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":60,
 			"Stats":
 			{
-				"AtaqueMin":0,
-				"AtaqueMax":0,
-				"Defensa":20
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
 			}
 		}
    }

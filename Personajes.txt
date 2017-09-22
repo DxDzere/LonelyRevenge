@@ -3,8 +3,10 @@
 	{
 		"Warrior":
 		{
-			"name":"Warrior",
-			"descripcion":"Personaje con gran defensa y un daño bastante aceptable",
+			"Name":"Warrior",
+			"Descripcion":"Personaje con gran defensa y un daño bastante aceptable",
+			"Kind":"Warrior",
+			"Money":0,
 			"Stats":
 			{
 				"PhysicalDamage":15,
@@ -19,8 +21,10 @@
 		},
 		"SpellCaster":
 		{
-			"name":"SpellCaster",
-			"descripcion":"Personaje con muy poca defensa, compensada por su gran daño",
+			"Name":"SpellCaster",
+			"Descripcion":"Personaje con muy poca defensa, compensada por su gran daño",
+			"Kind":"SpellCaster",
+			"Money":0,
 			"Stats":
 			{
 				"PhysicalDamage":5,
@@ -35,8 +39,10 @@
 		},
 		"Rogue":
 		{
-			"name":"Rogue",
-			"descripcion":"Personaje muy agil y con un daño bastante alto",
+			"Name":"Rogue",
+			"Descripcion":"Personaje muy agil y con un daño bastante alto",
+			"Kind":"Rogue",
+			"Money":0,
 			"Stats":
 			{
 				"PhysicalDamage":20,
@@ -51,8 +57,10 @@
 		},
 		"Priest":
 		{
-			"name":"Priest",
-			"descripcion":"Personaje con bastante defensa y un daño bastante bajo, pero puede curar a sus aliados",
+			"Name":"Priest",
+			"Descripcion":"Personaje con bastante defensa y un daño bastante bajo, pero puede curar a sus aliados",
+			"Kind":"Priest",
+			"Money":0,
 			"Stats":
 			{
 				"PhysicalDamage":5,
@@ -67,8 +75,10 @@
 		},
 		"Archer":
 		{
-			"name":"Archer",
-			"descripcion":"Personaje con poca defensa, compensada por su gran daño y sus ataques a distancia",
+			"Name":"Archer",
+			"Descripcion":"Personaje con poca defensa, compensada por su gran daño y sus ataques a distancia",
+			"Kind":"Archer",
+			"Money":0,
 			"Stats":
 			{
 				"PhysicalDamage":20,
@@ -83,8 +93,10 @@
 		},
 		"Tamer":
 		{
-			"name":"Tamer",
-			"descripcion":"Personaje devil pero con la capasidad de domar bestas para ayudarlo.",
+			"Name":"Tamer",
+			"Descripcion":"Personaje devil pero con la capasidad de domar bestas para ayudarlo.",
+			"Kind":"Tamer",
+			"Money":0,
 			"Stats":
 			{
 				"PhysicalDamage":10,

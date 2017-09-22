@@ -3,132 +3,236 @@
    {
 		"Casco Pesado":
 		{
-			"name":"Casco Pesado",
-			"descripcion":"",
-			"level":1,
+			"Name":"Casco Pesado",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"Defensa":0
+				"Defensa":0,
+				"MovementSpeed":0,
+				"Durability":0
 			}
 		},
 		"Casco Liviano":
 		{
-			"name":"Casco Liviano",
-			"descripcion":"",
-			"level":1,
+			"Name":"Casco Liviano",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"Defensa":0
+				"Defensa":0,
+				"MovementSpeed":0,
+				"Durability":0
 			}
 		},
 		"Sombrero":
 		{
-			"name":"Sombrero",
-			"descripcion":"",
-			"level":1,
+			"Name":"Sombrero",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"Defensa":0
+				"Defensa":0,
+				"MovementSpeed":0,
+				"Durability":0
 			}
 		},
 		"Pechera Pesada":
 		{
-			"name":"Pechera Pesada",
-			"descripcion":"",
-			"level":1,
+			"Name":"Pechera Pesada",
+			"Descripcion":"",
+			"PriceSell":400,
+			"PriceBuy":600,
+			"PriceRepair":150,
+			"PriceUpgrade":200,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"Defensa":0
+				"Defensa":0,
+				"MovementSpeed":0,
+				"Durability":0
 			}
 		},
 		"Pechera Liviana":
 		{
-			"name":"Pechera Liviana",
-			"descripcion":"",
-			"level":1,
+			"Name":"Pechera Liviana",
+			"Descripcion":"",
+			"PriceSell":400,
+			"PriceBuy":600,
+			"PriceRepair":150,
+			"PriceUpgrade":200,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"Defensa":0
+				"Defensa":0,
+				"MovementSpeed":0,
+				"Durability":0
 			}
 		},
 		"Tunica":
 		{
-			"name":"Tunica",
-			"descripcion":"",
-			"level":1,
+			"Name":"Tunica",
+			"Descripcion":"",
+			"PriceSell":400,
+			"PriceBuy":600,
+			"PriceRepair":150,
+			"PriceUpgrade":200,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"Defensa":0
+				"Defensa":0,
+				"MovementSpeed":0,
+				"Durability":0
 			}
 		},
 		"Guantes Pesados":
 		{
-			"name":"Guantes Pesados",
-			"descripcion":"",
-			"level":1,
+			"Name":"Guantes Pesados",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"Defensa":0
+				"Defensa":0,
+				"MovementSpeed":0,
+				"Durability":0
 			}
 		},
 		"Guantes Livianos":
 		{
-			"name":"Guantes Livianos",
-			"descripcion":"",
-			"level":1,
+			"Name":"Guantes Livianos",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"Defensa":0
+				"Defensa":0,
+				"MovementSpeed":0,
+				"Durability":0
 			}
 		},
 		"Perneras Pesadas":
 		{
-			"name":"Perneras Pesadas",
-			"descripcion":"",
-			"level":1,
+			"Name":"Perneras Pesadas",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"Defensa":0
+				"Defensa":0,
+				"MovementSpeed":0,
+				"Durability":0
 			}
 		},
 		"Perneras Livianas":
 		{
-			"name":"Perneras Livianas",
-			"descripcion":"",
-			"level":1,
+			"Name":"Perneras Livianas",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"Defensa":0
+				"Defensa":0,
+				"MovementSpeed":0,
+				"Durability":0
 			}
 		},
 		"Pantalones":
 		{
-			"name":"Pantalones",
-			"descripcion":"",
-			"level":1,
+			"Name":"Pantalones",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"Defensa":0
+				"Defensa":0,
+				"MovementSpeed":0,
+				"Durability":0
 			}
 		},
 		"Grebas Pesadas":
 		{
-			"name":"Grebas Pesadas",
-			"descripcion":"",
-			"level":1,
+			"Name":"Grebas Pesadas",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"Defensa":0
+				"Defensa":0,
+				"MovementSpeed":0,
+				"Durability":0
 			}
 		},
 		"Grebas Livianas":
 		{
-			"name":"Grebas Livianas",
-			"descripcion":"",
-			"level":1,
+			"Name":"Grebas Livianas",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
 			"Stats":
 			{
-				"Defensa":0
+				"Defensa":0,
+				"MovementSpeed":0,
+				"Durability":0
 			}
 		}
 	}

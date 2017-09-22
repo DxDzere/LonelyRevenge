@@ -3,8 +3,10 @@
    {
 		"Poción de vida I":
 		{
-			"name":"Poción de vida",
-			"descripcion":"Recupera 200 puntos de vida en 3 segundos",
+			"Name":"Poción de vida",
+			"Descripcion":"Recupera 200 puntos de vida en 3 segundos",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"Health":200
@@ -12,8 +14,10 @@
 		},
 		"Poción de maná I":
 		{
-			"name":"Poción de maná",
-			"descripcion":"Recupera 250 puntos de vida en 3 segundos",
+			"Name":"Poción de maná",
+			"Descripcion":"Recupera 250 puntos de vida en 3 segundos",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"Mana":250
@@ -21,8 +25,10 @@
 		},
 		"Poción de vida II":
 		{
-			"name":"Poción de vida",
-			"descripcion":"Recupera 500 puntos de vida en 3 segundos",
+			"Name":"Poción de vida",
+			"Descripcion":"Recupera 500 puntos de vida en 3 segundos",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"Health":500
@@ -30,8 +36,10 @@
 		},
 		"Poción de maná II":
 		{
-			"name":"Poción de maná",
-			"descripcion":"Recupera 650 puntos de vida en 3 segundos",
+			"Name":"Poción de maná",
+			"Descripcion":"Recupera 650 puntos de vida en 3 segundos",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"Mana":650
@@ -39,8 +47,10 @@
 		},
 		"Poción de vida III":
 		{
-			"name":"Poción de vida",
-			"descripcion":"Recupera 800 puntos de vida en 3 segundos",
+			"Name":"Poción de vida",
+			"Descripcion":"Recupera 800 puntos de vida en 3 segundos",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"Health":800
@@ -48,8 +58,10 @@
 		},
 		"Poción de maná III":
 		{
-			"name":"Poción de maná",
-			"descripcion":"Recupera 950 puntos de vida en 3 segundos",
+			"Name":"Poción de maná",
+			"Descripcion":"Recupera 950 puntos de vida en 3 segundos",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"Mana":950
@@ -60,13 +72,17 @@
 	{
 		"Antidoto":
 		{
-			"name":"Antidoto",
-			"descripcion":"Esta pocion cura el evenenamiento"
+			"Name":"Antidoto",
+			"Descripcion":"Esta pocion cura el evenenamiento",
+			"PriceSell":300,
+			"PriceBuy":500
 		},
 		"Pergamino de teletransporte":
 		{
-			"name":"Pergamino de teletransporte",
-			"descripcion":"Este pergamino te teletransporta a la ciudad",
+			"Name":"Pergamino de teletransporte",
+			"Descripcion":"Este pergamino te teletransporta a la ciudad",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"comentario":"hacer un pergamino por cada ciudad"
 		}
 	},
@@ -74,8 +90,10 @@
 	{
 		"Elixir de vida I":
 		{
-			"name":"Elixir de vida I",
-			"descripcion":"Este elixir cura el 30% de la vida máxima del personje",
+			"Name":"Elixir de vida I",
+			"Descripcion":"Este elixir cura el 30% de la vida máxima del personje",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"Health":0.3
@@ -83,8 +101,10 @@
 		},
 		"Elixir de maná I":
 		{
-			"name":"Elixir de maná I",
-			"descripcion":"Este elixir cura el 30% del maná máximo del personje",
+			"Name":"Elixir de maná I",
+			"Descripcion":"Este elixir cura el 30% del maná máximo del personje",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"Mana":0.3
@@ -92,8 +112,10 @@
 		},
 		"Elixir de vida II":
 		{
-			"name":"Elixir de vida II",
-			"descripcion":"Este elixir cura el 50% de la vida máxima del personje",
+			"Name":"Elixir de vida II",
+			"Descripcion":"Este elixir cura el 50% de la vida máxima del personje",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"Health":0.5
@@ -101,8 +123,10 @@
 		},
 		"Elixir de maná II":
 		{
-			"name":"Elixir de maná II",
-			"descripcion":"Este elixir cura el 50% del maná máximo del personje",
+			"Name":"Elixir de maná II",
+			"Descripcion":"Este elixir cura el 50% del maná máximo del personje",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"Mana":0.5
@@ -110,8 +134,10 @@
 		},
 		"Elixir de vida III":
 		{
-			"name":"Elixir de vida III",
-			"descripcion":"Este elixir cura el 75% de la vida máxima del personje",
+			"Name":"Elixir de vida III",
+			"Descripcion":"Este elixir cura el 75% de la vida máxima del personje",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"Health":0.75
@@ -119,8 +145,10 @@
 		},
 		"Elixir de maná III":
 		{
-			"name":"Elixir de maná III",
-			"descripcion":"Este elixir cura el 75% del maná máximo del personje",
+			"Name":"Elixir de maná III",
+			"Descripcion":"Este elixir cura el 75% del maná máximo del personje",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"Mana":0.75
@@ -131,8 +159,10 @@
 	{
 		"Poción de fuerza":
 		{
-			"name":"Poción de fuerza",
-			"descripcion":"Esta pocion aumenta temporalmente el daño del personaje",
+			"Name":"Poción de fuerza",
+			"Descripcion":"Esta pocion aumenta temporalmente el daño del personaje",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"PhysicalDamage":1.75,
@@ -141,8 +171,10 @@
 		},
 		"Poción de agilidad":
 		{
-			"name":"Poción de agilidad",
-			"descripcion":"Esta pocion aumenta temporalmente la velocidad de movimiento y ataque del personaje",
+			"Name":"Poción de agilidad",
+			"Descripcion":"Esta pocion aumenta temporalmente la velocidad de movimiento y ataque del personaje",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"MovementSpeed":1.1,
@@ -151,8 +183,10 @@
 		},
 		"Poción de defenza":
 		{
-			"name":"Poción de defenza",
-			"descripcion":"Esta pocion aumenta temporalmente la defensa del personaje",
+			"Name":"Poción de defenza",
+			"Descripcion":"Esta pocion aumenta temporalmente la defensa del personaje",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"Defense":1.2
@@ -160,8 +194,10 @@
 		},
 		"Poción de vitalidad":
 		{
-			"name":"Poción de vitalidad",
-			"descripcion":"Esta pocion aumenta temporalmente la regeneracion de vida del personaje",
+			"Name":"Poción de vitalidad",
+			"Descripcion":"Esta pocion aumenta temporalmente la regeneracion de vida del personaje",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"Health":3
@@ -169,8 +205,10 @@
 		},
 		"Poción de energía":
 		{
-			"name":"Poción de energía",
-			"descripcion":"Esta pocion aumenta temporalmente la regeneracion de mana del personaje",
+			"Name":"Poción de energía",
+			"Descripcion":"Esta pocion aumenta temporalmente la regeneracion de mana del personaje",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"Mana":5
@@ -178,8 +216,10 @@
 		},
 		"Poción de inmunidad":
 		{
-			"name":"Poción de inmunidad",
-			"descripcion":"Esta rara pocion te vuelve inmune al daño por unos segundos",
+			"Name":"Poción de inmunidad",
+			"Descripcion":"Esta rara pocion te vuelve inmune al daño por unos segundos",
+			"PriceSell":300,
+			"PriceBuy":500,
 			"Stats":
 			{
 				"":"?"
