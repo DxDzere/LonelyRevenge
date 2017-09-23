@@ -1,0 +1,53 @@
+Casco Pesado
+Casco Liviano
+Sombrero
+Pechera Pesada
+Pechera Liviana
+Tunica
+Guantes Pesados
+Guantes Livianos
+Perneras Pesadas
+Perneras Livianas
+Pantalones
+Grebas Pesadas
+Grebas Livianas
+Espada Inicial
+Espada Tier1
+Espada Tier2
+Espada Tier3
+Daga Inicial
+Daga Tier1
+Daga Tier2
+Daga Tier3
+Arco Inicial
+Arco Tier1
+Arco Tier2
+Arco Tier3
+Báculo Inicial
+Báculo Tier1
+Báculo Tier2
+Báculo Tier3
+Escudo Inicial
+Escudo Tier1
+Escudo Tier2
+Escudo Tier3
+Poción de vida I
+Poción de vida II
+Poción de vida III
+Poción de maná I
+Poción de maná II
+Poción de maná III
+Antidoto
+Pergamino de teletransporte
+Elixir de vida I
+Elixir de vida II
+Elixir de vida III
+Elixir de maná I
+Elixir de maná II
+Elixir de maná III
+Poción de fuerza
+Poción de agilidad
+Poción de defenza
+Poción de vitalidad
+Poción de energía
+Poción de inmunidad
