@@ -27,6 +27,11 @@ public class Items : MonoBehaviour{
 
     }
 
+    public virtual void Buy(PlayerBase _player)
+    {
+
+    }
+
     public virtual void Equip(PlayerBase _player)
     {
 

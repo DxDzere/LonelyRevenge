@@ -16,6 +16,7 @@ public class PlayerBase : CharacterBasic
         public float resist;
         public float manaCap;
         public float dexterity;
+        public float staminaCap;
     }
     //controller
     public float xp, xpCap, lvl, lvlCap;

@@ -20,6 +20,7 @@ public class CharacterBasic : MonoBehaviour
         public float movementSpeed;
         public float attackSpeed;
         public float staminaCap;
+        public float stamina;
     }
     public string name;
     public enum characterType {Warrior, SpellCaster, Rogue, Priest, Archer, Default}

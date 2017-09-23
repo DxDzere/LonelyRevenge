@@ -12,4 +12,19 @@ public class GemasComunes : Gemas {
         int manaCap;
         int dexterity;
     }
+
+    public override void Use(PlayerBase _player)
+    {
+
+    }
+
+    public override void Throw()
+    {
+        base.Throw();
+    }
+
+    public override void Sell(PlayerBase _player)
+    {
+        _player.money += priceSell;
+    }
 }
