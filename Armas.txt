@@ -1,10 +1,11 @@
-{
+﻿{
 	"Armas":
 	{
 		"Espada Inicial":
 		{
+			"ID" : "001",
 			"Name":"Espada Inicial",
-			"Descripcion":"",
+			"Description":"ABC",
 			"PriceSell":300,
 			"PriceBuy":500,
 			"PriceRepair":100,
@@ -25,6 +26,7 @@
 		},
 		"Espada Tier1":
 		{
+			"ID" : "002",
 			"Name":"Espada Tier1",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -47,6 +49,7 @@
 		},
 		"Espada Tier2":
 		{
+			"ID" : "003",
 			"Name":"Espada Tier2",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -69,6 +72,7 @@
 		},
 		"Espada Tier3":
 		{
+			"ID" : "004",
 			"Name":"Espada Tier3",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -91,6 +95,7 @@
 		},
 		"Daga Inicial":
 		{
+			"ID" : "005",
 			"Name":"Daga Inicial",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -113,6 +118,7 @@
 		},
 		"Daga Tier1":
 		{
+			"ID" : "006",
 			"Name":"Daga Tier1",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -135,6 +141,7 @@
 		},
 		"Daga Tier2":
 		{
+			"ID" : "007",
 			"Name":"Daga Tier2",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -157,6 +164,7 @@
 		},
 		"Daga Tier3":
 		{
+			"ID" : "008",
 			"Name":"Daga Tier3",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -179,6 +187,7 @@
 		},
 		"Arco Inicial":
 		{
+			"ID" : "009",
 			"Name":"Arco Inicial",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -201,6 +210,7 @@
 		},
 		"Arco Tier1":
 		{
+			"ID" : "010",
 			"Name":"Arco Tier1",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -223,6 +233,7 @@
 		},
 		"Arco Tier2":
 		{
+			"ID" : "011",
 			"Name":"Arco Tier2",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -245,6 +256,7 @@
 		},
 		"Arco Tier3":
 		{
+			"ID" : "012",
 			"Name":"Arco Tier3",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -267,6 +279,7 @@
 		},
 		"Báculo Inicial":
 		{
+			"ID" : "013",
 			"Name":"Báculo Inicial",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -289,6 +302,7 @@
 		},
 		"Báculo Tier1":
 		{
+			"ID" : "014",
 			"Name":"Báculo Tier1",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -311,6 +325,7 @@
 		},
 		"Báculo Tier2":
 		{
+			"ID" : "015",
 			"Name":"Báculo Tier2",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -333,6 +348,7 @@
 		},
 		"Báculo Tier3":
 		{
+			"ID" : "016",
 			"Name":"Báculo Tier3",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -355,6 +371,7 @@
 		},
 		"Escudo Inicial":
 		{
+			"ID" : "017",
 			"Name":"Escudo Inicial",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -377,6 +394,7 @@
 		},
 		"Escudo Tier1":
 		{
+			"ID" : "018",
 			"Name":"Escudo Tier1",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -399,6 +417,7 @@
 		},
 		"Escudo Tier2":
 		{
+			"ID" : "019",
 			"Name":"Escudo Tier2",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -421,6 +440,7 @@
 		},
 		"Escudo Tier3":
 		{
+			"ID" : "020",
 			"Name":"Escudo Tier3",
 			"Descripcion":"",
 			"PriceSell":300,

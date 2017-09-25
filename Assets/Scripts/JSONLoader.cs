@@ -6,25 +6,25 @@ using System.Text;
 
 public class JSONLoader : MonoBehaviour {
 
-    PlayerBase[] playerArray;
-    PlayerBase[] players;
-    Items[] itemsArray;
-    Arma[] armasArray;
-    Armadura[] armadurasArray;
 
-    private void Start()
+    PlayerBase[] playerArray;
+    public Items[] itemsArray;
+    public Arma[] armasArray;
+    public Armadura[] armadurasArray;
+
+    private void Awake()
     {
         string jsonPlayers = LoadText("Personajes.txt");
         playerArray = LoadJsonPersonaje(jsonPlayers);
 
         string jsonItems = LoadText("Items.txt");
-        itemsArray = LoadJsonItems(jsonItems);
+		itemsArray = LoadJsonArmas(jsonItems);
 
         string jsonArmas = LoadText("Armas.txt");
-        itemsArray = LoadJsonItems(jsonItems);
+		armasArray = LoadJsonArmas(jsonArmas);
 
         string jsonArmaduras = LoadText("Armaduras.txt");
-        itemsArray = LoadJsonItems(jsonItems);
+		armadurasArray = LoadJsonArmadura(jsonArmaduras);
     }
 
     private string LoadText(string _path)
@@ -81,12 +81,14 @@ public class JSONLoader : MonoBehaviour {
         itemsArray = new Items[itemsCount];
 
         for (int i = 0; i < itemsCount; i++)
-        {
-            jsonObjAux = jsonObj;
-            itemsArray[i].name = (jsonObjAux[i].GetField("Name")) ? jsonObjAux[i].GetField("Name").str : string.Empty;
+		{
+			jsonObjAux = jsonObj.GetField ("Items");
+			itemsArray[i] = new Items();
+            itemsArray[i].itemName = (jsonObjAux[i].GetField("Name")) ? jsonObjAux[i].GetField("Name").str : string.Empty;
             itemsArray[i].description = (jsonObjAux[i].GetField("Description")) ? jsonObjAux[i].GetField("Description").str : string.Empty;
             itemsArray[i].priceSell = (jsonObjAux[i].HasField("PriceSell")) ? jsonObjAux[i].GetField("PriceSell").n : 0;
             itemsArray[i].priceBuy = (jsonObjAux[i].HasField("PriceBuy")) ? jsonObjAux[i].GetField("PriceBuy").n : 0;
+			itemsArray[i].ID = (jsonObjAux[i].HasField("ID")) ? jsonObjAux[i].GetField("ID").n : 0;
             if (jsonObj.HasField("Stats"))
             {
                 jsonObj = jsonObj.GetField("Stat");
@@ -100,13 +102,19 @@ public class JSONLoader : MonoBehaviour {
     {
         JSONObject jsonObj = new JSONObject(_json);
         JSONObject jsonObjAux = jsonObj;
-        int armasCount = jsonObjAux.GetField("Armas").Count;
+		int armasCount = 0;
+		if (jsonObjAux.HasField ("Armas")) 
+		{
+			armasCount = jsonObjAux.GetField ("Armas").Count;
+		}
         armasArray = new Arma[armasCount];
 
         for (int i = 0; i < armasCount; i++)
         {
-            jsonObjAux = jsonObj;
-            armasArray[i].name = (jsonObjAux[i].HasField("Name")) ? jsonObjAux[i].GetField("Name").str : string.Empty;
+			jsonObjAux = jsonObj.GetField ("Armas");
+			armasArray [i] = new Arma ();
+
+			armasArray[i].itemName = (jsonObjAux[i].HasField("Name")) ? jsonObjAux[i].GetField("Name").str : string.Empty;
             armasArray[i].description = (jsonObjAux[i].HasField("Description")) ? jsonObjAux[i].GetField("Description").str : string.Empty;
             armasArray[i].priceSell = (jsonObjAux[i].HasField("PriceSell")) ? jsonObjAux[i].GetField("PriceSell").n : 0;
             armasArray[i].priceBuy = (jsonObjAux[i].HasField("PriceBuy")) ? jsonObjAux[i].GetField("PriceBuy").n : 0;
@@ -114,7 +122,8 @@ public class JSONLoader : MonoBehaviour {
             armasArray[i].priceUpgrade = (jsonObjAux[i].HasField("PriceUpgrade")) ? jsonObjAux[i].GetField("PriceUpgrade").n : 0;
             armasArray[i].grade = (jsonObjAux[i].HasField("Grade")) ? jsonObjAux[i].GetField("Grade").n : 0;
             armasArray[i].upgradeSuccessRate = (jsonObjAux[i].HasField("UpgradeSuccessRate")) ? jsonObjAux[i].GetField("UpgradeSuccessRate").n : 0;
-            armasArray[i].lvl = (jsonObjAux[i].HasField("Level")) ? jsonObjAux[i].GetField("Level").n : 0;
+			armasArray[i].lvl = (jsonObjAux[i].HasField("Level")) ? jsonObjAux[i].GetField("Level").n : 0;
+			armasArray[i].ID = (jsonObjAux[i].HasField("ID")) ? jsonObjAux[i].GetField("ID").n : 0;
             if (jsonObj.HasField("Stats"))
             {
                 jsonObj = jsonObj.GetField("Stat");
@@ -139,9 +148,11 @@ public class JSONLoader : MonoBehaviour {
         armadurasArray = new Armadura[armadurasCount];
 
         for (int i = 0; i < armadurasCount; i++)
-        {
-            jsonObjAux = jsonObj;
-            armadurasArray[i].name = (jsonObjAux[i].HasField("Name")) ? jsonObjAux[i].GetField("Name").str : string.Empty;
+		{
+			jsonObjAux = jsonObj.GetField ("Armaduras");
+			armadurasArray [i] = new Armadura ();
+
+            armadurasArray[i].itemName = (jsonObjAux[i].HasField("Name")) ? jsonObjAux[i].GetField("Name").str : string.Empty;
             armadurasArray[i].description = (jsonObjAux[i].HasField("Description")) ? jsonObjAux[i].GetField("Description").str : string.Empty;
             armadurasArray[i].priceSell = (jsonObjAux[i].HasField("PriceSell")) ? jsonObjAux[i].GetField("PriceSell").n : 0;
             armadurasArray[i].priceBuy = (jsonObjAux[i].HasField("PriceBuy")) ? jsonObjAux[i].GetField("PriceBuy").n : 0;
@@ -149,7 +160,8 @@ public class JSONLoader : MonoBehaviour {
             armadurasArray[i].priceUpgrade = (jsonObjAux[i].HasField("PriceUpgrade")) ? jsonObjAux[i].GetField("PriceUpgrade").n : 0;
             armadurasArray[i].grade = (jsonObjAux[i].HasField("Grade")) ? jsonObjAux[i].GetField("Grade").n : 0;
             armadurasArray[i].upgradeSuccessRate = (jsonObjAux[i].HasField("UpgradeSuccessRate")) ? jsonObjAux[i].GetField("UpgradeSuccessRate").n : 0;
-            armadurasArray[i].lvl = (jsonObjAux[i].HasField("Level")) ? jsonObjAux[i].GetField("Level").n : 0;
+			armadurasArray[i].lvl = (jsonObjAux[i].HasField("Level")) ? jsonObjAux[i].GetField("Level").n : 0;
+			armadurasArray[i].ID = (jsonObjAux[i].HasField("ID")) ? jsonObjAux[i].GetField("ID").n : 0;
             if (jsonObj.HasField("Stats"))
             {
                 jsonObj = jsonObj.GetField("Stat");

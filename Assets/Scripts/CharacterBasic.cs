@@ -23,7 +23,7 @@ public class CharacterBasic : MonoBehaviour
         public float stamina;
     }
     public string name;
-    public enum characterType {Warrior, SpellCaster, Rogue, Priest, Archer, Default}
+    public enum characterType {Warrior, SpellCaster, Rogue, Priest, Archer, Tamer, Default}
     enum state {Idle, Walk, Run, Attack, Dead, Hit, Jump}
     //anims
     //weapons

@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Items : MonoBehaviour{
 
-    public string name;
+    public string itemName;
     public string description;
     public float priceSell;
     public float priceBuy;
+	public float ID;
 
     public PlayerBase.playerStats stats;
 
@@ -28,11 +29,6 @@ public class Items : MonoBehaviour{
     }
 
     public virtual void Buy(PlayerBase _player)
-    {
-
-    }
-
-    public virtual void Equip(PlayerBase _player)
     {
 
     }

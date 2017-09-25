@@ -18,7 +18,7 @@ public class Arma : Equipables {
         public float movementSpeed;
     }
 
-    public override void Equip(PlayerBase _player)
+    public override void Use(PlayerBase _player)
     {
         _player.playerBaseStats.defense += statsBasicA.defense;
         _player.playerBaseStats.physicalDamage += Random.Range(statsBasicA.pAttackMin, statsBasicA.pAttackMax);
