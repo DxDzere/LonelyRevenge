@@ -17,8 +17,16 @@ public class Armadura : Equipables
     }
     public override void Use(PlayerBase _player)
     {
-        _player.playerBaseStats.defense += statsBasicArm.defense;
-        _player.playerBaseStats.movementSpeed += statsBasicArm.movementSpeed;
+        if (lvl == 1)
+        {
+            _player.playerBaseStats.defense += statsBasicArm.defense;
+            _player.playerBaseStats.movementSpeed += statsBasicArm.movementSpeed;
+        }
+        else
+        {
+            _player.playerBaseStats.defense += statsBasicArm.defense * lvl * 0.8f;
+            _player.playerBaseStats.movementSpeed += statsBasicArm.movementSpeed * lvl * 0.3f;
+        }
     }
 
     public override void Throw()
@@ -64,7 +72,7 @@ public class Armadura : Equipables
 				break;
 			}
 			statsBasicArm.defense += (statsBasicArm.defense * multiplicator);
-			statsBasicArm.durabilityCap += (statsBasicArm.durabilityCap * multiplicator);
+			statsBasicArm.durabilityCap += (statsBasicArm.durabilityCap * multiplicator * lvl * 0.5f);
 			statsBasicArm.movementSpeed += (statsBasicArm.movementSpeed * multiplicator);
 			statsBasicArm.durability = statsBasicArm.durabilityCap;
 		}

@@ -4,33 +4,33 @@ using UnityEngine;
 
 public class GameManagger : MonoBehaviour
 {
-	/*public static GameManagger instancia = null;
-	public gameObject instanciaPersonaje;
-	public gameObject instanciaInventario;
+	public static GameManagger instancia = null;
+	public GameObject instanciaPersonaje;
+	public GameObject instanciaInventario;
 
 	void Awake()
 	{
-		if (inv == null) {
-			inv = this;
-		} else if (inv != null) {
+		if (instancia == null) {
+            instancia = this;
+		} else if (instancia != null) {
 			Destroy (gameObject);
 		}
 		DontDestroyOnLoad (gameObject);
-		iniciaPrsonaje ();
+		//iniciaPrsonaje ();
 		iniciaInventario ();
 	}
 
-	void iniciaPersonaje()
+	/*void iniciaPersonaje()
 	{
 		if (personaje.pj == null)
 		{
 			Instantiate (instanciaPersonaje);
 		}
-	}
+	}*/
 
 	void iniciaInventario()
 	{
-		if (inventario.inv == null)
+		if (Inventario.inv == null)
 		{
 			Instantiate (instanciaInventario);
 		}
@@ -45,5 +45,5 @@ public class GameManagger : MonoBehaviour
 	// Update is called once per frame
 	void Update () {
 		
-	}*/
+	}
 }

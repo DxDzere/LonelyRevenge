@@ -4,20 +4,9 @@ using UnityEngine;
 
 public class Pasivos : Consumibles {
 
-	public enum pocionesPasivas {pocionFuerza, pocionAgilidad, pocionDefensa, pocionVitalidad, pocionEnergia, pocionInmunidad, Default}
-    public baseStats statsBase;
+	public enum pocionesPasivas {pocionFuerza, pocionAgilidad, pocionDefensa, pocionVitalidad, pocionEnergia, pocionInmunidad, Default};
     public float potionTime;
-
-    public struct baseStats
-    {
-        public float health;
-        public float attack;
-        public float defense;
-        public float mana;
-        public float stamina;
-        public float movementSpeed;
-        public float attackSpeed;
-    }
+    
 
     public override void Use(PlayerBase _player)
     {

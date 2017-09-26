@@ -5,15 +5,6 @@ using UnityEngine;
 public class Automaticos : Consumibles{
 
     public enum pociones {pocionVida, pocionMana}
-    public typeRecarga statsRecarga;
-
-    public struct typeRecarga
-    {
-        public float healthCap;
-        public float health;
-        public float manaCap;
-        public float mana;
-    }
 
     public override void Use(PlayerBase _player)
     {
@@ -23,15 +14,15 @@ public class Automaticos : Consumibles{
 
         for (float i=0f; i<potionTime; i+=Time.deltaTime)
         {
-            if (rechargeHealth < statsRecarga.healthCap && _player.playerBaseStats.health < _player.playerBaseStats.healthCap)
+            if (rechargeHealth < statsBase.healthCap && _player.playerBaseStats.health < _player.playerBaseStats.healthCap)
             {
-                _player.playerBaseStats.health += statsRecarga.health;
-                rechargeHealth += statsRecarga.health;
+                _player.playerBaseStats.health += statsBase.health;
+                rechargeHealth += statsBase.health;
             }
-            if (rechargeMana < statsRecarga.manaCap && _player.playerBaseStats.mana < _player.playerBaseStats.manaCap)
+            if (rechargeMana < statsBase.manaCap && _player.playerBaseStats.mana < _player.playerBaseStats.manaCap)
             {
-                _player.playerBaseStats.mana += statsRecarga.mana;
-                rechargeMana += statsRecarga.mana;
+                _player.playerBaseStats.mana += statsBase.mana;
+                rechargeMana += statsBase.mana;
             }
         }
     }

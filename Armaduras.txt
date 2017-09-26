@@ -3,6 +3,7 @@
    {
 		"Casco Pesado":
 		{
+			"ID" : "021",
 			"Name":"Casco Pesado",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -11,16 +12,17 @@
 			"PriceUpgrade":150,
 			"Grade":0,
 			"UpgradeSuccessRate":100,
-			"Level":1,
+			"Level":2,
 			"Stats":
 			{
-				"Defensa":0,
-				"MovementSpeed":0,
-				"Durability":0
+				"Defensa":20,
+				"MovementSpeed":-0.1,
+				"Durability":100
 			}
 		},
 		"Casco Liviano":
 		{
+			"ID" : "022",
 			"Name":"Casco Liviano",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -32,13 +34,14 @@
 			"Level":1,
 			"Stats":
 			{
-				"Defensa":0,
-				"MovementSpeed":0,
-				"Durability":0
+				"Defensa":10,
+				"MovementSpeed":0.1,
+				"Durability":100
 			}
 		},
 		"Sombrero":
 		{
+			"ID" : "023",
 			"Name":"Sombrero",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -50,13 +53,14 @@
 			"Level":1,
 			"Stats":
 			{
-				"Defensa":0,
-				"MovementSpeed":0,
-				"Durability":0
+				"Defensa":8,
+				"MovementSpeed":0.1,
+				"Durability":100
 			}
 		},
 		"Pechera Pesada":
 		{
+			"ID" : "024",
 			"Name":"Pechera Pesada",
 			"Descripcion":"",
 			"PriceSell":400,
@@ -68,13 +72,14 @@
 			"Level":1,
 			"Stats":
 			{
-				"Defensa":0,
-				"MovementSpeed":0,
-				"Durability":0
+				"Defensa":20,
+				"MovementSpeed":-0.1,
+				"Durability":100
 			}
 		},
 		"Pechera Liviana":
 		{
+			"ID" : "025",
 			"Name":"Pechera Liviana",
 			"Descripcion":"",
 			"PriceSell":400,
@@ -86,13 +91,14 @@
 			"Level":1,
 			"Stats":
 			{
-				"Defensa":0,
-				"MovementSpeed":0,
-				"Durability":0
+				"Defensa":10,
+				"MovementSpeed":0.1,
+				"Durability":100
 			}
 		},
 		"Tunica":
 		{
+			"ID" : "026",
 			"Name":"Tunica",
 			"Descripcion":"",
 			"PriceSell":400,
@@ -104,13 +110,14 @@
 			"Level":1,
 			"Stats":
 			{
-				"Defensa":0,
-				"MovementSpeed":0,
-				"Durability":0
+				"Defensa":8,
+				"MovementSpeed":0.1,
+				"Durability":100
 			}
 		},
 		"Guantes Pesados":
 		{
+			"ID" : "027",
 			"Name":"Guantes Pesados",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -122,13 +129,14 @@
 			"Level":1,
 			"Stats":
 			{
-				"Defensa":0,
-				"MovementSpeed":0,
-				"Durability":0
+				"Defensa":20,
+				"MovementSpeed":-0.1,
+				"Durability":100
 			}
 		},
 		"Guantes Livianos":
 		{
+			"ID" : "028",
 			"Name":"Guantes Livianos",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -140,13 +148,32 @@
 			"Level":1,
 			"Stats":
 			{
-				"Defensa":0,
-				"MovementSpeed":0,
-				"Durability":0
+				"Defensa":10,
+				"MovementSpeed":0.1,
+				"Durability":100
+			}
+		},"Guantes Sin Dedos":
+		{
+			"ID" : "56",
+			"Name":"Guantes Sin Dedos",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
+			"Stats":
+			{
+				"Defensa":8,
+				"MovementSpeed":0.1,
+				"Durability":100
 			}
 		},
 		"Perneras Pesadas":
 		{
+			"ID" : "029",
 			"Name":"Perneras Pesadas",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -158,13 +185,14 @@
 			"Level":1,
 			"Stats":
 			{
-				"Defensa":0,
-				"MovementSpeed":0,
-				"Durability":0
+				"Defensa":20,
+				"MovementSpeed":-0.1,
+				"Durability":100
 			}
 		},
 		"Perneras Livianas":
 		{
+			"ID" : "030",
 			"Name":"Perneras Livianas",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -176,13 +204,14 @@
 			"Level":1,
 			"Stats":
 			{
-				"Defensa":0,
-				"MovementSpeed":0,
-				"Durability":0
+				"Defensa":10,
+				"MovementSpeed":0.1,
+				"Durability":100
 			}
 		},
 		"Pantalones":
 		{
+			"ID" : "031",
 			"Name":"Pantalones",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -194,13 +223,14 @@
 			"Level":1,
 			"Stats":
 			{
-				"Defensa":0,
-				"MovementSpeed":0,
-				"Durability":0
+				"Defensa":8,
+				"MovementSpeed":0.1,
+				"Durability":100
 			}
 		},
 		"Grebas Pesadas":
 		{
+			"ID" : "032",
 			"Name":"Grebas Pesadas",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -212,13 +242,14 @@
 			"Level":1,
 			"Stats":
 			{
-				"Defensa":0,
-				"MovementSpeed":0,
-				"Durability":0
+				"Defensa":20,
+				"MovementSpeed":-0.1,
+				"Durability":100
 			}
 		},
 		"Grebas Livianas":
 		{
+			"ID" : "033",
 			"Name":"Grebas Livianas",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -230,9 +261,28 @@
 			"Level":1,
 			"Stats":
 			{
-				"Defensa":0,
-				"MovementSpeed":0,
-				"Durability":0
+				"Defensa":10,
+				"MovementSpeed":0.1,
+				"Durability":100
+			}
+		},
+		"Chancletas":
+		{
+			"ID" : "055",
+			"Name":"Chancletas",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
+			"Stats":
+			{
+				"Defensa":8,
+				"MovementSpeed":0.1,
+				"Durability":100
 			}
 		}
 	}

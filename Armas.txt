@@ -1,7 +1,7 @@
 ﻿{
 	"Armas":
 	{
-		"Espada Inicial":
+		"Espada Larga Inicial":
 		{
 			"ID" : "001",
 			"Name":"Espada Inicial",
@@ -24,7 +24,7 @@
 				"MovementSpeed":0
 			}
 		},
-		"Espada Tier1":
+		"Espada Larga Tier1":
 		{
 			"ID" : "002",
 			"Name":"Espada Tier1",
@@ -47,7 +47,7 @@
 				"MovementSpeed":0
 			}
 		},
-		"Espada Tier2":
+		"Espada Larga Tier2":
 		{
 			"ID" : "003",
 			"Name":"Espada Tier2",
@@ -70,9 +70,101 @@
 				"MovementSpeed":0
 			}
 		},
-		"Espada Tier3":
+		"Espada Larga Tier3":
 		{
 			"ID" : "004",
+			"Name":"Espada Tier3",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":60,
+			"Stats":
+			{
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
+			}
+		},
+		"Espada Corta Inicial":
+		{
+			"ID" : "057",
+			"Name":"Espada Inicial",
+			"Description":"ABC",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":1,
+			"Stats":
+			{
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
+			}
+		},
+		"Espada Corta Tier1":
+		{
+			"ID" : "058",
+			"Name":"Espada Tier1",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":20,
+			"Stats":
+			{
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
+			}
+		},
+		"Espada Corta Tier2":
+		{
+			"ID" : "059",
+			"Name":"Espada Tier2",
+			"Descripcion":"",
+			"PriceSell":300,
+			"PriceBuy":500,
+			"PriceRepair":100,
+			"PriceUpgrade":150,
+			"Grade":0,
+			"UpgradeSuccessRate":100,
+			"Level":40,
+			"Stats":
+			{
+				"P.AttackMin":0,
+				"P.AttackMax":0,
+				"A.AttackMin":0,
+				"A.AttackMax":0,
+				"Defensa":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0
+			}
+		},
+		"Espada Corta Tier3":
+		{
+			"ID" : "060",
 			"Name":"Espada Tier3",
 			"Descripcion":"",
 			"PriceSell":300,
@@ -389,7 +481,8 @@
 				"A.AttackMax":0,
 				"Defensa":0,
 				"AttackSpeed":0,
-				"MovementSpeed":0
+				"MovementSpeed":0,
+				"HealthCap":0
 			}
 		},
 		"Escudo Tier1":
@@ -412,7 +505,8 @@
 				"A.AttackMax":0,
 				"Defensa":0,
 				"AttackSpeed":0,
-				"MovementSpeed":0
+				"MovementSpeed":0,
+				"HealthCap":0
 			}
 		},
 		"Escudo Tier2":
@@ -435,7 +529,8 @@
 				"A.AttackMax":0,
 				"Defensa":0,
 				"AttackSpeed":0,
-				"MovementSpeed":0
+				"MovementSpeed":0,
+				"HealthCap":0
 			}
 		},
 		"Escudo Tier3":
@@ -458,7 +553,8 @@
 				"A.AttackMax":0,
 				"Defensa":0,
 				"AttackSpeed":0,
-				"MovementSpeed":0
+				"MovementSpeed":0,
+				"HealthCap":0
 			}
 		}
    }

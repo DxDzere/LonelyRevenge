@@ -8,7 +8,7 @@ public class JSONLoader : MonoBehaviour {
 
 
     PlayerBase[] playerArray;
-    public Items[] itemsArray;
+    public Consumibles[] itemsArray;
     public Arma[] armasArray;
     public Armadura[] armadurasArray;
 
@@ -17,8 +17,8 @@ public class JSONLoader : MonoBehaviour {
         string jsonPlayers = LoadText("Personajes.txt");
         playerArray = LoadJsonPersonaje(jsonPlayers);
 
-        string jsonItems = LoadText("Items.txt");
-		itemsArray = LoadJsonArmas(jsonItems);
+        string jsonConsumibles = LoadText("Consumibles.txt");
+		itemsArray = LoadJsonCons(jsonConsumibles);
 
         string jsonArmas = LoadText("Armas.txt");
 		armasArray = LoadJsonArmas(jsonArmas);
@@ -73,25 +73,35 @@ public class JSONLoader : MonoBehaviour {
         return playerArray;
     }
 
-    private Items[] LoadJsonItems(string _json)
+    private Consumibles[] LoadJsonCons(string _json)
     {
         JSONObject jsonObj = new JSONObject(_json);
         JSONObject jsonObjAux = jsonObj;
-        int itemsCount = jsonObjAux.GetField("Items").Count;
-        itemsArray = new Items[itemsCount];
+        int itemsCount = jsonObjAux.GetField("Consumibles").Count;
+        itemsArray = new Consumibles[itemsCount];
 
         for (int i = 0; i < itemsCount; i++)
 		{
-			jsonObjAux = jsonObj.GetField ("Items");
-			itemsArray[i] = new Items();
+			jsonObjAux = jsonObj.GetField ("Consumibles");
+			itemsArray[i] = new Consumibles();
             itemsArray[i].itemName = (jsonObjAux[i].GetField("Name")) ? jsonObjAux[i].GetField("Name").str : string.Empty;
             itemsArray[i].description = (jsonObjAux[i].GetField("Description")) ? jsonObjAux[i].GetField("Description").str : string.Empty;
             itemsArray[i].priceSell = (jsonObjAux[i].HasField("PriceSell")) ? jsonObjAux[i].GetField("PriceSell").n : 0;
             itemsArray[i].priceBuy = (jsonObjAux[i].HasField("PriceBuy")) ? jsonObjAux[i].GetField("PriceBuy").n : 0;
 			itemsArray[i].ID = (jsonObjAux[i].HasField("ID")) ? jsonObjAux[i].GetField("ID").n : 0;
+            itemsArray[i].time = (jsonObjAux[i].HasField("Time")) ? jsonObjAux[i].GetField("Time").n : 0;
             if (jsonObj.HasField("Stats"))
             {
                 jsonObj = jsonObj.GetField("Stat");
+                itemsArray[i].statsBase.healthCap = (jsonObjAux.HasField("HealthCap")) ? jsonObjAux.GetField("HealthCap").n : 0;
+                itemsArray[i].statsBase.manaCap = (jsonObjAux.HasField("ManaCap")) ? jsonObjAux.GetField("ManaCap").n : 0;
+                itemsArray[i].statsBase.health = (jsonObjAux.HasField("Health")) ? jsonObjAux.GetField("Health").n : 0;
+                itemsArray[i].statsBase.defense = (jsonObj.HasField("Defense")) ? jsonObjAux[i].GetField("Defense").n : 0;
+                itemsArray[i].statsBase.mana = (jsonObjAux.HasField("Mana")) ? jsonObjAux.GetField("Mana").n : 0;
+                itemsArray[i].statsBase.stamina = (jsonObjAux.HasField("Stamina")) ? jsonObjAux.GetField("Stamina").n : 0;
+                itemsArray[i].statsBase.attackSpeed = (jsonObjAux.HasField("AttackSpeed")) ? jsonObjAux.GetField("AttackSpeed").n : 0;
+                itemsArray[i].statsBase.movementSpeed = (jsonObjAux.HasField("MovementSpeed")) ? jsonObjAux.GetField("MovementSpeed").n : 0;
+                itemsArray[i].statsBase.attack = (jsonObjAux.HasField("Attack")) ? jsonObjAux.GetField("Attack").n : 0;
             }
         }
 
@@ -134,6 +144,8 @@ public class JSONLoader : MonoBehaviour {
                 armasArray[i].statsBasicA.defense = (jsonObj.HasField("Defense")) ? jsonObjAux[i].GetField("Defense").n : 0;
                 armasArray[i].statsBasicA.attackSpeed = (jsonObj.HasField("AttackSpeed")) ? jsonObjAux[i].GetField("AttackSpeed").n : 0;
                 armasArray[i].statsBasicA.movementSpeed = (jsonObj.HasField("MovementSpeed")) ? jsonObjAux[i].GetField("MovementSpeed").n : 0;
+                playerArray[i].playerBaseStats.healthCap = (jsonObjAux.HasField("HealthCap")) ? jsonObjAux.GetField("HealthCap").n : 0;
+                playerArray[i].playerBaseStats.manaCap = (jsonObjAux.HasField("ManaCap")) ? jsonObjAux.GetField("ManaCap").n : 0;
             }
         }
 

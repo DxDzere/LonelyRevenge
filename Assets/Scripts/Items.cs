@@ -10,8 +10,6 @@ public class Items : MonoBehaviour{
     public float priceBuy;
 	public float ID;
 
-    public PlayerBase.playerStats stats;
-
 
     public virtual void Use(PlayerBase _player)
     {

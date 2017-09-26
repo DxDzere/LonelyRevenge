@@ -4,16 +4,7 @@ using UnityEngine;
 
 public class Instantaneos : Consumibles{
 
-	public enum itemsInstantaneos {antidoto, pergaminoTeleport, elixirVida, elixirMana, Default}
-    public changeState states;
-
-    public struct changeState
-    {
-        float mana;
-        float vida;
-        Vector3 position;
-        bool state;
-    }
+	public enum itemsInstantaneos {antidoto, pergaminoTeleport, elixirVida, elixirMana, Default};
 
     public override void Use(PlayerBase _player)
     {
