@@ -17,6 +17,10 @@ public class PlayerBase : CharacterBasic
         public float vitality;
         public float dexterity;
         public float energy;
+        public float strengthCap;
+        public float vitalityCap;
+        public float dexterityCap;
+        public float energyCap;
     }
     //controller
     public float xp, xpCap, lvl, lvlCap, atributesPoint;
@@ -41,47 +45,62 @@ public class PlayerBase : CharacterBasic
 		if (lvl == lvlCap)
 		{
 			xp=xpCap;
-		}
-		
+            xpCap+= xpCap*0.5f;
+            atributesPoint += 3;
+        }
 	}
-	
-	/*public void atributsUp()
-	{
-		if (atributesPoint > 0)
-		{
-			switch (atributes)
-			{
-				case vitality:
-					vitality +=1;
-					healthCap = healthCap*vitality;
-					defense = defense*vitality;
-				break;
-				case strength:
-					strength +=1;
-					physicalDamage = physicalDamage*strength;
-					abilityDamage = abilityDamage*strength;
-				break;
-				case dexterity:
-					dexterity +=1;
-					attackSpeed = attackSpeed*dexterity;
-					movementSpeed = movementSpeed*dexterity;
-				break;
-				case energy:
-					energy +=1;
-					staminaCap = staminaCap*energy;
-					manaCap = manaCap*energy;
-				break;
-			}
-		}
-	}*/
-	
-	public void expUp(float xpEarned)
+
+    public void expUp(float xpEarned)
 	{
 		xp += xpEarned;
-		while(xp>=xpCap)
+		while(xp>= xpCap && lvl < lvlCap)
 		{
             xp -= xpCap;
 			levelUp();
 		}
 	}
+
+    public void vitalityUp()
+	{
+		if (atributesPoint > 0 && atributes.vitality < atributes.vitalityCap)
+		{
+            atributes.vitality += 1;
+            atributesPoint -= 1;
+            playerBaseStats.healthCap = playerBaseStats.healthCap * atributes.vitality;
+            playerBaseStats.defense = playerBaseStats.defense * atributes.vitality;
+        }
+	}
+
+    public void strengthUp()
+    {
+        if (atributesPoint > 0 && atributes.strength < atributes.strengthCap)
+        {
+            atributes.strength += 1;
+            atributesPoint -= 1;
+            playerBaseStats.physicalDamage = playerBaseStats.physicalDamage * atributes.strength;
+            playerBaseStats.abilityDamage = playerBaseStats.abilityDamage * atributes.strength;
+        }
+    }
+
+    public void dexterityUp()
+    {
+        if (atributesPoint > 0 && atributes.dexterity < atributes.dexterityCap)
+        {
+            atributes.dexterity += 1;
+            atributesPoint -= 1;
+            playerBaseStats.attackSpeed = playerBaseStats.attackSpeed * atributes.dexterity;
+            playerBaseStats.movementSpeed = playerBaseStats.movementSpeed * atributes.dexterity;
+        }
+    }
+
+    public void energyUp()
+    {
+        if (atributesPoint > 0 && atributes.energy<atributes.energyCap)
+        {
+            atributes.energy += 1;
+            atributesPoint -= 1;
+            playerBaseStats.staminaCap = playerBaseStats.staminaCap * atributes.energy;
+            playerBaseStats.manaCap = playerBaseStats.manaCap * atributes.energy;
+        }
+    }
 }

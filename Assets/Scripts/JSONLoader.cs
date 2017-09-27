@@ -60,6 +60,11 @@ public class JSONLoader : MonoBehaviour {
             playerArray[i].description = (jsonObjAux[i].HasField("Descripcion")) ? jsonObjAux[i].GetField("Descripcion").str : string.Empty;
             playerArray[i].kind = (jsonObjAux[i].HasField("Kind")) ? (PlayerBase.characterType)System.Enum.Parse(typeof(PlayerBase.characterType), jsonObjAux[i].GetField("Kind").str) : PlayerBase.characterType.Default;
             playerArray[i].money = (jsonObjAux.HasField("Money")) ? jsonObjAux.GetField("Money").n : 0;
+            playerArray[i].xp = (jsonObjAux.HasField("Xp")) ? jsonObjAux.GetField("Xp").n : 0;
+            playerArray[i].xpCap = (jsonObjAux.HasField("XpCap")) ? jsonObjAux.GetField("XpCap").n : 500;
+            playerArray[i].lvl = (jsonObjAux.HasField("Lvl")) ? jsonObjAux.GetField("Lvl").n : 1;
+            playerArray[i].lvlCap = (jsonObjAux.HasField("LvlCap")) ? jsonObjAux.GetField("LvlCap").n : 100;
+            playerArray[i].atributesPoint = (jsonObjAux.HasField("AtributesPoint")) ? jsonObjAux.GetField("AtributesPoint").n : 0;
 
             if (jsonObjAux[i].HasField("Stats"))
             {
@@ -72,6 +77,18 @@ public class JSONLoader : MonoBehaviour {
                 playerArray[i].playerBaseStats.healthCap = (jsonObjAux.HasField("HealthCap")) ? jsonObjAux.GetField("HealthCap").n : 0;
                 playerArray[i].playerBaseStats.manaCap = (jsonObjAux.HasField("ManaCap")) ? jsonObjAux.GetField("ManaCap").n : 0;
                 playerArray[i].playerBaseStats.staminaCap = (jsonObjAux.HasField("StaminaCap")) ? jsonObjAux.GetField("StaminaCap").n : 0;
+            }
+            if (jsonObjAux[i].HasField("Atributes"))
+            {
+                jsonObjAux = jsonObjAux[i].GetField("Atributes");
+                playerArray[i].atributes.strength = (jsonObjAux.HasField("Strength")) ? jsonObjAux.GetField("Strength").n : 1;
+                playerArray[i].atributes.vitality = (jsonObjAux.HasField("Vitality")) ? jsonObjAux.GetField("Vitality").n : 1;
+                playerArray[i].atributes.dexterity = (jsonObjAux.HasField("Dexterity")) ? jsonObjAux.GetField("Dexterity").n : 1;
+                playerArray[i].atributes.energy = (jsonObjAux.HasField("Energy")) ? jsonObjAux.GetField("Energy").n : 1;
+                playerArray[i].atributes.strengthCap = (jsonObjAux.HasField("StrengthCap")) ? jsonObjAux.GetField("StrengthCap").n : 150;
+                playerArray[i].atributes.vitalityCap = (jsonObjAux.HasField("VitalityCap")) ? jsonObjAux.GetField("VitalityCap").n : 150;
+                playerArray[i].atributes.dexterityCap = (jsonObjAux.HasField("DexterityCap")) ? jsonObjAux.GetField("DexterityCap").n : 150;
+                playerArray[i].atributes.energyCap = (jsonObjAux.HasField("EnergyCap")) ? jsonObjAux.GetField("EnergyCap").n : 150;
             }
         }
 
