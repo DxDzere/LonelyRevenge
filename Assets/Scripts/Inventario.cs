@@ -27,7 +27,7 @@ public class Inventario : MonoBehaviour
 		}
 	}
 
-	void addItem(GameObject item)
+	public void addItem(GameObject item)
 	{
 		for(int i = 0; i<_items.Length; i++)
         {
@@ -41,18 +41,7 @@ public class Inventario : MonoBehaviour
             }
         }
 	}
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "Item")
-        {
-            if (Input.GetKeyDown(KeyCode.LeftControl))
-            {
-                addItem(GameObject.FindWithTag("Item"));
-            }
-        }
-    }
-
+	
     public void Use(PlayerBase _player)
     {
         functions.Use(_player);

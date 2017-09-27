@@ -7,24 +7,32 @@ using System.Text;
 public class JSONLoader : MonoBehaviour {
 
 
-    PlayerBase[] playerArray;
-    public Consumibles[] itemsArray;
+    public PlayerBase[] playerArray;
+    public EnemyBase[] enemyArray;
+    public Consumibles[] consArray;
     public Arma[] armasArray;
     public Armadura[] armadurasArray;
+    public Joyeria[] joyeriaArray;
 
     private void Awake()
     {
         string jsonPlayers = LoadText("Personajes.txt");
         playerArray = LoadJsonPersonaje(jsonPlayers);
+		
+        string jsonEnemys = LoadText("Enemys.txt");
+        enemyArray = LoadJsonEnemy(jsonEnemys);
 
         string jsonConsumibles = LoadText("Consumibles.txt");
-		itemsArray = LoadJsonCons(jsonConsumibles);
+		consArray = LoadJsonCons(jsonConsumibles);
 
         string jsonArmas = LoadText("Armas.txt");
 		armasArray = LoadJsonArmas(jsonArmas);
 
         string jsonArmaduras = LoadText("Armaduras.txt");
 		armadurasArray = LoadJsonArmadura(jsonArmaduras);
+		
+        string jsonJoyeria = LoadText("Joyeria.txt");
+        joyeriaArray = LoadJsonJoyeria(jsonJoyeria);
     }
 
     private string LoadText(string _path)
@@ -50,11 +58,8 @@ public class JSONLoader : MonoBehaviour {
             playerArray[i] = new PlayerBase();
             playerArray[i].name = (jsonObjAux[i].HasField("Name")) ? jsonObjAux[i].GetField("Name").str : string.Empty;
             playerArray[i].description = (jsonObjAux[i].HasField("Descripcion")) ? jsonObjAux[i].GetField("Descripcion").str : string.Empty;
-            playerArray[i].kind = (jsonObjAux[i].HasField("Kind")) ? (CharacterBasic.characterType)System.Enum.Parse(typeof(CharacterBasic.characterType), jsonObjAux[i].GetField("Kind").str) : CharacterBasic.characterType.Default;
+            playerArray[i].kind = (jsonObjAux[i].HasField("Kind")) ? (PlayerBase.characterType)System.Enum.Parse(typeof(PlayerBase.characterType), jsonObjAux[i].GetField("Kind").str) : PlayerBase.characterType.Default;
             playerArray[i].money = (jsonObjAux.HasField("Money")) ? jsonObjAux.GetField("Money").n : 0;
-
-            Debug.Log(playerArray[i].name);
-            Debug.Log(playerArray[i].description);
 
             if (jsonObjAux[i].HasField("Stats"))
             {
@@ -73,39 +78,75 @@ public class JSONLoader : MonoBehaviour {
         return playerArray;
     }
 
+    private EnemyBase [] LoadJsonEnemy(string _json)
+    {
+        JSONObject jsonObj = new JSONObject(_json);
+        JSONObject jsonObjAux = jsonObj;
+        Debug.Log(jsonObjAux);
+        int enemyCount = jsonObjAux.GetField("Enemy").Count;
+        Debug.Log(enemyCount);
+        enemyArray = new EnemyBase[enemyCount];
+
+        for (int i = 0; i < enemyCount; i++)
+        {
+            jsonObjAux = jsonObj.GetField("Enemy");
+            Debug.Log(jsonObjAux);
+            enemyArray[i] = new EnemyBase();
+            enemyArray[i].name = (jsonObjAux[i].HasField("Name")) ? jsonObjAux[i].GetField("Name").str : string.Empty;
+            enemyArray[i].description = (jsonObjAux[i].HasField("Descripcion")) ? jsonObjAux[i].GetField("Descripcion").str : string.Empty;
+            enemyArray[i].classEnemy = (jsonObjAux[i].HasField("Class")) ? (EnemyBase.enemyType)System.Enum.Parse(typeof(EnemyBase.enemyType), jsonObjAux[i].GetField("Class").str) : EnemyBase.enemyType.Default;
+            enemyArray[i].money = (jsonObjAux.HasField("Money")) ? jsonObjAux.GetField("Money").n : 0;
+
+            if (jsonObjAux[i].HasField("Stats"))
+            {
+                jsonObjAux = jsonObjAux[i].GetField("Stats");
+                enemyArray[i].playerBaseStats.physicalDamage = (jsonObjAux.HasField("PhysicalDamage")) ? jsonObjAux.GetField("PhysicalDamage").n : 0;
+                enemyArray[i].playerBaseStats.abilityDamage = (jsonObjAux.HasField("HabilityDamage")) ? jsonObjAux.GetField("HabilityDamage").n : 0;
+                enemyArray[i].playerBaseStats.defense = (jsonObjAux.HasField("Defense")) ? jsonObjAux.GetField("Defense").n : 0;
+                enemyArray[i].playerBaseStats.attackSpeed = (jsonObjAux.HasField("AttackSpeed")) ? jsonObjAux.GetField("AttackSpeed").n : 0;
+                enemyArray[i].playerBaseStats.movementSpeed = (jsonObjAux.HasField("MovementSpeed")) ? jsonObjAux.GetField("MovementSpeed").n : 0;
+                enemyArray[i].playerBaseStats.healthCap = (jsonObjAux.HasField("HealthCap")) ? jsonObjAux.GetField("HealthCap").n : 0;
+                enemyArray[i].playerBaseStats.manaCap = (jsonObjAux.HasField("ManaCap")) ? jsonObjAux.GetField("ManaCap").n : 0;
+                enemyArray[i].playerBaseStats.staminaCap = (jsonObjAux.HasField("StaminaCap")) ? jsonObjAux.GetField("StaminaCap").n : 0;
+            }
+        }
+
+        return enemyArray;
+    }
+
     private Consumibles[] LoadJsonCons(string _json)
     {
         JSONObject jsonObj = new JSONObject(_json);
         JSONObject jsonObjAux = jsonObj;
-        int itemsCount = jsonObjAux.GetField("Consumibles").Count;
-        itemsArray = new Consumibles[itemsCount];
+        int consCount = jsonObjAux.GetField("Consumibles").Count;
+        consArray = new Consumibles[consCount];
 
-        for (int i = 0; i < itemsCount; i++)
+        for (int i = 0; i < consCount; i++)
 		{
 			jsonObjAux = jsonObj.GetField ("Consumibles");
-			itemsArray[i] = new Consumibles();
-            itemsArray[i].itemName = (jsonObjAux[i].GetField("Name")) ? jsonObjAux[i].GetField("Name").str : string.Empty;
-            itemsArray[i].description = (jsonObjAux[i].GetField("Description")) ? jsonObjAux[i].GetField("Description").str : string.Empty;
-            itemsArray[i].priceSell = (jsonObjAux[i].HasField("PriceSell")) ? jsonObjAux[i].GetField("PriceSell").n : 0;
-            itemsArray[i].priceBuy = (jsonObjAux[i].HasField("PriceBuy")) ? jsonObjAux[i].GetField("PriceBuy").n : 0;
-			itemsArray[i].ID = (jsonObjAux[i].HasField("ID")) ? jsonObjAux[i].GetField("ID").n : 0;
-            itemsArray[i].time = (jsonObjAux[i].HasField("Time")) ? jsonObjAux[i].GetField("Time").n : 0;
+			consArray[i] = new Consumibles();
+            consArray[i].itemName = (jsonObjAux[i].GetField("Name")) ? jsonObjAux[i].GetField("Name").str : string.Empty;
+            consArray[i].description = (jsonObjAux[i].GetField("Description")) ? jsonObjAux[i].GetField("Description").str : string.Empty;
+            consArray[i].priceSell = (jsonObjAux[i].HasField("PriceSell")) ? jsonObjAux[i].GetField("PriceSell").n : 0;
+            consArray[i].priceBuy = (jsonObjAux[i].HasField("PriceBuy")) ? jsonObjAux[i].GetField("PriceBuy").n : 0;
+			consArray[i].ID = (jsonObjAux[i].HasField("ID")) ? jsonObjAux[i].GetField("ID").n : 0;
+            consArray[i].time = (jsonObjAux[i].HasField("Time")) ? jsonObjAux[i].GetField("Time").n : 0;
             if (jsonObj.HasField("Stats"))
             {
                 jsonObj = jsonObj.GetField("Stat");
-                itemsArray[i].statsBase.healthCap = (jsonObjAux.HasField("HealthCap")) ? jsonObjAux.GetField("HealthCap").n : 0;
-                itemsArray[i].statsBase.manaCap = (jsonObjAux.HasField("ManaCap")) ? jsonObjAux.GetField("ManaCap").n : 0;
-                itemsArray[i].statsBase.health = (jsonObjAux.HasField("Health")) ? jsonObjAux.GetField("Health").n : 0;
-                itemsArray[i].statsBase.defense = (jsonObj.HasField("Defense")) ? jsonObjAux[i].GetField("Defense").n : 0;
-                itemsArray[i].statsBase.mana = (jsonObjAux.HasField("Mana")) ? jsonObjAux.GetField("Mana").n : 0;
-                itemsArray[i].statsBase.stamina = (jsonObjAux.HasField("Stamina")) ? jsonObjAux.GetField("Stamina").n : 0;
-                itemsArray[i].statsBase.attackSpeed = (jsonObjAux.HasField("AttackSpeed")) ? jsonObjAux.GetField("AttackSpeed").n : 0;
-                itemsArray[i].statsBase.movementSpeed = (jsonObjAux.HasField("MovementSpeed")) ? jsonObjAux.GetField("MovementSpeed").n : 0;
-                itemsArray[i].statsBase.attack = (jsonObjAux.HasField("Attack")) ? jsonObjAux.GetField("Attack").n : 0;
+                consArray[i].statsBase.healthCap = (jsonObjAux.HasField("HealthCap")) ? jsonObjAux.GetField("HealthCap").n : 0;
+                consArray[i].statsBase.manaCap = (jsonObjAux.HasField("ManaCap")) ? jsonObjAux.GetField("ManaCap").n : 0;
+                consArray[i].statsBase.health = (jsonObjAux.HasField("Health")) ? jsonObjAux.GetField("Health").n : 0;
+                consArray[i].statsBase.defense = (jsonObj.HasField("Defense")) ? jsonObjAux[i].GetField("Defense").n : 0;
+                consArray[i].statsBase.mana = (jsonObjAux.HasField("Mana")) ? jsonObjAux.GetField("Mana").n : 0;
+                consArray[i].statsBase.stamina = (jsonObjAux.HasField("Stamina")) ? jsonObjAux.GetField("Stamina").n : 0;
+                consArray[i].statsBase.attackSpeed = (jsonObjAux.HasField("AttackSpeed")) ? jsonObjAux.GetField("AttackSpeed").n : 0;
+                consArray[i].statsBase.movementSpeed = (jsonObjAux.HasField("MovementSpeed")) ? jsonObjAux.GetField("MovementSpeed").n : 0;
+                consArray[i].statsBase.attack = (jsonObjAux.HasField("Attack")) ? jsonObjAux.GetField("Attack").n : 0;
             }
         }
 
-        return itemsArray;
+        return consArray;
     }
 
     private Arma[] LoadJsonArmas(string _json)
@@ -184,5 +225,41 @@ public class JSONLoader : MonoBehaviour {
         }
 
         return armadurasArray;
+    }
+	
+	private Joyeria[] LoadJsonJoyeria(string _json)
+    {
+        JSONObject jsonObj = new JSONObject(_json);
+        JSONObject jsonObjAux = jsonObj;
+        int joyeriaCount = jsonObjAux.GetField("Joyeria").Count;
+        joyeriaArray = new Joyeria[joyeriaCount];
+
+        for (int i = 0; i < joyeriaCount; i++)
+		{
+			jsonObjAux = jsonObj.GetField ("Joyeria");
+			joyeriaArray[i] = new Joyeria();
+
+            joyeriaArray[i].itemName = (jsonObjAux[i].HasField("Name")) ? jsonObjAux[i].GetField("Name").str : string.Empty;
+            joyeriaArray[i].description = (jsonObjAux[i].HasField("Description")) ? jsonObjAux[i].GetField("Description").str : string.Empty;
+            joyeriaArray[i].priceSell = (jsonObjAux[i].HasField("PriceSell")) ? jsonObjAux[i].GetField("PriceSell").n : 0;
+            joyeriaArray[i].priceBuy = (jsonObjAux[i].HasField("PriceBuy")) ? jsonObjAux[i].GetField("PriceBuy").n : 0;
+            joyeriaArray[i].priceRepair = (jsonObjAux[i].HasField("PriceRepair")) ? jsonObjAux[i].GetField("PriceRepair").n : 0;
+            joyeriaArray[i].priceUpgrade = (jsonObjAux[i].HasField("PriceUpgrade")) ? jsonObjAux[i].GetField("PriceUpgrade").n : 0;
+            joyeriaArray[i].grade = (jsonObjAux[i].HasField("Grade")) ? jsonObjAux[i].GetField("Grade").n : 0;
+            joyeriaArray[i].upgradeSuccessRate = (jsonObjAux[i].HasField("UpgradeSuccessRate")) ? jsonObjAux[i].GetField("UpgradeSuccessRate").n : 0;
+			joyeriaArray[i].lvl = (jsonObjAux[i].HasField("Level")) ? jsonObjAux[i].GetField("Level").n : 0;
+			joyeriaArray[i].ID = (jsonObjAux[i].HasField("ID")) ? jsonObjAux[i].GetField("ID").n : 0;
+            if (jsonObj.HasField("Stats"))
+            {
+                jsonObj = jsonObj.GetField("Stat");
+                joyeriaArray[i].stats.healthCap = (jsonObjAux.HasField("HealthCap")) ? jsonObjAux.GetField("HealthCap").n : 0;
+                joyeriaArray[i].stats.manaCap = (jsonObjAux.HasField("ManaCap")) ? jsonObjAux.GetField("ManaCap").n : 0;
+                joyeriaArray[i].stats.staminaCap = (jsonObjAux.HasField("StaminaCap")) ? jsonObjAux.GetField("StaminaCap").n : 0;
+                joyeriaArray[i].stats.attackSpeed = (jsonObjAux.HasField("AttackSpeed")) ? jsonObjAux.GetField("AttackSpeed").n : 0;
+                joyeriaArray[i].stats.movementSpeed = (jsonObjAux.HasField("MovementSpeed")) ? jsonObjAux.GetField("MovementSpeed").n : 0;
+            }
+        }
+
+        return joyeriaArray;
     }
 }
