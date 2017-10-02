@@ -29,7 +29,7 @@ public class Arma : Equipables {
 
     public override void Throw()
     {
-        base.Throw();
+        Inventario.InventoryItems _items;
     }
 
     public override void Sell(PlayerBase _player)

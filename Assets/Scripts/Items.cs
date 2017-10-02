@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Items : MonoBehaviour{
+public class Items : MonoBehaviour {
 
     public string itemName;
     public string description;
     public float priceSell;
     public float priceBuy;
 	public float ID;
-
-
+    
     public virtual void Use(PlayerBase _player)
     {
 

@@ -7,4 +7,6 @@ public class NPC : CharacterBasic
     //ia
     //quest
     //interaccion
+
+
 }

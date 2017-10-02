@@ -11,6 +11,16 @@ public class PlayerBase : CharacterBasic
     public characterType kind;
 	Inventario inv;
     
+	void Start()
+	{
+		Items itemA = new Items ();
+		Items itemB = new Pasivos ();
+		Debug.Log("ITEM A: " + (itemA.GetType()).ToString());
+		Debug.Log("ITEM B: " + (itemB.GetType()).ToString());
+		Debug.Log ("ITEM A = PASIVO? :" + (itemA.GetType () == typeof(Pasivos)));
+		Debug.Log("ITEM B = PASIVO? :" + (itemB.GetType() == typeof(Pasivos)));
+	}
+
     public struct playerAtributes
     {
         public float strength;
@@ -28,11 +38,17 @@ public class PlayerBase : CharacterBasic
 
     private void OnTriggerEnter(Collider other)
     {
+        Items item;
         if(other.tag == "Item")
         {
-            if (Input.GetKeyDown(KeyCode.LeftControl))
+            item = other.gameObject.GetComponent<Items>();
+            if (item != null)
             {
-                inv.addItem(GameObject.FindWithTag("Item"));
+                if (Input.GetKeyDown(KeyCode.LeftControl))
+                {
+                    inv.addItem(item);
+                    Destroy(other.gameObject);
+                }
             }
         }
     }
