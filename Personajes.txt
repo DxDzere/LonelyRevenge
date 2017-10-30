@@ -94,7 +94,7 @@
 		"Tamer":
 		{
 			"Name":"Tamer",
-			"Descripcion":"Personaje devil pero con la capasidad de domar bestas para ayudarlo.",
+			"Descripcion":"Personaje debil pero con la capasidad de domar bestas para ayudarlo.",
 			"Kind":"Tamer",
 			"Money":0,
 			"Stats":

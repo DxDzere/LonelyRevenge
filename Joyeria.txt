@@ -1,0 +1,167 @@
+{
+   "Joyas":
+   {
+		"Anillo de Velocidad":
+		{
+			"ID" : "56",
+			"Name":"Anillo de Velocidad",
+			"Descripcion":"Este anillo aumentara tu velocidad de movimiento y ataque",
+			"PriceSell":500,
+			"PriceBuy":2000,
+			"PriceRepair":0,
+			"PriceUpgrade":0,
+			"Grade":0,
+			"UpgradeSuccessRate":0,
+			"Level":1,
+			"dropChance":2,
+			"Stats":
+			{
+				"HealthCap":0,
+				"ManaCap":0,
+				"StaminaCap":0,
+				"AttackSpeed":1.1,
+				"MovementSpeed":1.1,
+				"Durability":100
+			}
+		},
+		"Anillo de Vitalidad":
+		{
+			"ID" : "57",
+			"Name":"Anillo de Fortaleza",
+			"Descripcion":"Este anillo aumentara tu vida maxima y stamina",
+			"PriceSell":500,
+			"PriceBuy":2000,
+			"PriceRepair":0,
+			"PriceUpgrade":0,
+			"Grade":0,
+			"UpgradeSuccessRate":0,
+			"Level":1,
+			"dropChance":2,
+			"Stats":
+			{
+				"HealthCap":1.1,
+				"ManaCap":0,
+				"StaminaCap":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0,
+				"Durability":100
+			}
+		},
+		"Anillo de Energia":
+		{
+			"ID" : "58",
+			"Name":"Anillo de Energia",
+			"Descripcion":"Este anillo aumentara tu mana maximo o la stamina maxima",
+			"PriceSell":500,
+			"PriceBuy":2000,
+			"PriceRepair":0,
+			"PriceUpgrade":0,
+			"Grade":0,
+			"UpgradeSuccessRate":0,
+			"Level":1,
+			"dropChance":2,
+			"Stats":
+			{
+				"HealthCap":0,
+				"ManaCap":1.2,
+				"StaminaCap":1.15,
+				"AttackSpeed":0,
+				"MovementSpeed":0,
+				"Durability":100
+			}
+		},
+		"Pendiente de Velocidad":
+		{
+			"ID" : "59",
+			"Name":"Pendiente de Velocidad",
+			"Descripcion":"Este pendiente aumentara tu velocidad de movimiento y ataque",
+			"PriceSell":500,
+			"PriceBuy":2000,
+			"PriceRepair":0,
+			"PriceUpgrade":0,
+			"Grade":0,
+			"UpgradeSuccessRate":0,
+			"Level":1,
+			"dropChance":2,
+			"Stats":
+			{
+				"HealthCap":0,
+				"ManaCap":0,
+				"StaminaCap":0,
+				"AttackSpeed":1.1,
+				"MovementSpeed":1.1,
+				"Durability":100
+			}
+		},
+		"Pendiente de Vitalidad":
+		{
+			"ID" : "60",
+			"Name":"Pendiente de Vitalidad",
+			"Descripcion":"Este pendiente aumentara tu vida maxima y stamina",
+			"PriceSell":500,
+			"PriceBuy":2000,
+			"PriceRepair":0,
+			"PriceUpgrade":0,
+			"Grade":0,
+			"UpgradeSuccessRate":0,
+			"Level":1,
+			"dropChance":2,
+			"Stats":
+			{
+				"HealthCap":1.15,
+				"ManaCap":0,
+				"StaminaCap":0,
+				"AttackSpeed":0,
+				"MovementSpeed":0,
+				"Durability":100
+			}
+		},
+		"Pendiente de Energia":
+		{
+			"ID" : "61",
+			"Name":"Pendiente de Energia",
+			"Descripcion":"Este pendiente aumentara tu mana maximo o la stamina maxima",
+			"PriceSell":500,
+			"PriceBuy":2000,
+			"PriceRepair":0,
+			"PriceUpgrade":0,
+			"Grade":0,
+			"UpgradeSuccessRate":0,
+			"Level":1,
+			"dropChance":2,
+			"Stats":
+			{
+				"HealthCap":0,
+				"ManaCap":1.2,
+				"StaminaCap":1.15,
+				"AttackSpeed":0,
+				"MovementSpeed":0,
+				"Durability":100
+			}
+		},
+		"Anillo Maligno":
+		{
+			"ID" : "62",
+			"Name":"Anillo Maligno",
+			"Descripcion":"Un anillo para gobernarlos a todos",
+			"PriceSell":50000,
+			"PriceBuy":20000000,
+			"PriceRepair":0,
+			"PriceUpgrade":0,
+			"Grade":0,
+			"UpgradeSuccessRate":0,
+			"Level":1,
+			"dropChance":0.01,
+			"Stats":
+			{
+				"HealthCap":1.5,
+				"ManaCap":1.5,
+				"StaminaCap":1.5,
+				"AttackSpeed":1.5,
+				"MovementSpeed":1.2,
+				"Durability":100
+			}
+		}
+		
+	}
+},

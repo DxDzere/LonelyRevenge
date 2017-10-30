@@ -9,6 +9,7 @@
 			"PriceSell":300,
 			"PriceBuy":500,
 			"Time":3,
+			"dropChance":30,
 			"Stats":
 			{
 				"HealthCap":200,
@@ -23,6 +24,7 @@
 			"PriceSell":300,
 			"PriceBuy":500,
 			"Time":3,
+			"dropChance":30,
 			"Stats":
 			{
 				"ManaCap":250,
@@ -37,6 +39,7 @@
 			"PriceSell":300,
 			"PriceBuy":500,
 			"Time":4,
+			"dropChance":25,
 			"Stats":
 			{
 				"HealthCap":500,
@@ -51,6 +54,7 @@
 			"PriceSell":300,
 			"PriceBuy":500,
 			"Time":4,
+			"dropChance":25,
 			"Stats":
 			{
 				"ManaCap":650,
@@ -65,6 +69,7 @@
 			"PriceSell":300,
 			"PriceBuy":500,
 			"Time":5,
+			"dropChance":15,
 			"Stats":
 			{
 				"HealthCap":800,
@@ -79,6 +84,7 @@
 			"PriceSell":300,
 			"PriceBuy":500,
 			"Time":5,
+			"dropChance":15,
 			"Stats":
 			{
 				"ManaCap":950,
@@ -93,6 +99,7 @@
 			"ID" : "040",
 			"Name":"Antidoto",
 			"Descripcion":"Esta pocion cura el evenenamiento",
+			"dropChance":15,
 			"PriceSell":300,
 			"PriceBuy":500
 		},
@@ -101,6 +108,7 @@
 			"ID" : "041",
 			"Name":"Pergamino de teletransporte",
 			"Descripcion":"Este pergamino te teletransporta a la ciudad",
+			"dropChance":10,
 			"PriceSell":300,
 			"PriceBuy":500,
 			"comentario":"hacer un pergamino por cada ciudad"
@@ -115,6 +123,7 @@
 			"Descripcion":"Este elixir cura el 30% de la vida máxima del personje",
 			"PriceSell":300,
 			"PriceBuy":500,
+			"dropChance":15,
 			"Stats":
 			{
 				"Health":0.3
@@ -127,6 +136,7 @@
 			"Descripcion":"Este elixir cura el 30% del maná máximo del personje",
 			"PriceSell":300,
 			"PriceBuy":500,
+			"dropChance":15,
 			"Stats":
 			{
 				"Mana":0.3
@@ -139,6 +149,7 @@
 			"Descripcion":"Este elixir cura el 50% de la vida máxima del personje",
 			"PriceSell":300,
 			"PriceBuy":500,
+			"dropChance":8,
 			"Stats":
 			{
 				"Health":0.5
@@ -151,6 +162,7 @@
 			"Descripcion":"Este elixir cura el 50% del maná máximo del personje",
 			"PriceSell":300,
 			"PriceBuy":500,
+			"dropChance":8,
 			"Stats":
 			{
 				"Mana":0.5
@@ -163,6 +175,7 @@
 			"Descripcion":"Este elixir cura el 75% de la vida máxima del personje",
 			"PriceSell":300,
 			"PriceBuy":500,
+			"dropChance":4,
 			"Stats":
 			{
 				"Health":0.75
@@ -175,6 +188,7 @@
 			"Descripcion":"Este elixir cura el 75% del maná máximo del personje",
 			"PriceSell":300,
 			"PriceBuy":500,
+			"dropChance":4,
 			"Stats":
 			{
 				"Mana":0.75
@@ -191,6 +205,7 @@
 			"PriceSell":300,
 			"PriceBuy":500,
 			"Time":120,
+			"dropChance":5,
 			"Stats":
 			{
 				"Attack":1.75
@@ -204,6 +219,7 @@
 			"PriceSell":300,
 			"PriceBuy":500,
 			"Time":120,
+			"dropChance":5,
 			"Stats":
 			{
 				"MovementSpeed":1.1,
@@ -218,6 +234,7 @@
 			"PriceSell":300,
 			"PriceBuy":500,
 			"Time":120,
+			"dropChance":5,
 			"Stats":
 			{
 				"Defense":1.2
@@ -231,6 +248,7 @@
 			"PriceSell":300,
 			"PriceBuy":500,
 			"Time":120,
+			"dropChance":5,
 			"Stats":
 			{
 				"Health":3
@@ -244,6 +262,7 @@
 			"PriceSell":300,
 			"PriceBuy":500,
 			"Time":120,
+			"dropChance":5,
 			"Stats":
 			{
 				"Mana":5
@@ -256,10 +275,11 @@
 			"Descripcion":"Esta rara pocion te vuelve inmune al daño por unos segundos",
 			"PriceSell":300,
 			"PriceBuy":500,
-			"Time":30,
+			"Time":10,
+			"dropChance":1,
 			"Stats":
 			{
-				"":"?"
+				"Defense":"1000000"
 			}
 		}
 	}

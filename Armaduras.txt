@@ -5,14 +5,15 @@
 		{
 			"ID" : "021",
 			"Name":"Casco Pesado",
-			"Descripcion":"",
+			"Descripcion":"Bastante pesado pero protejera muy bien tu cabeza de los golpes",
 			"PriceSell":300,
 			"PriceBuy":500,
 			"PriceRepair":100,
 			"PriceUpgrade":150,
 			"Grade":0,
 			"UpgradeSuccessRate":100,
-			"Level":2,
+			"Level":1,
+			"dropChance":20,
 			"Stats":
 			{
 				"Defensa":20,
@@ -24,7 +25,7 @@
 		{
 			"ID" : "022",
 			"Name":"Casco Liviano",
-			"Descripcion":"",
+			"Descripcion":"Muy comodo y liviano pero trata de evitar los golpes en la cabeza",
 			"PriceSell":300,
 			"PriceBuy":500,
 			"PriceRepair":100,
@@ -32,6 +33,7 @@
 			"Grade":0,
 			"UpgradeSuccessRate":100,
 			"Level":1,
+			"dropChance":20,
 			"Stats":
 			{
 				"Defensa":10,
@@ -43,7 +45,7 @@
 		{
 			"ID" : "023",
 			"Name":"Sombrero",
-			"Descripcion":"",
+			"Descripcion":"Elegante pero no te protejera mucho contra los golpes en la cabeza",
 			"PriceSell":300,
 			"PriceBuy":500,
 			"PriceRepair":100,
@@ -51,6 +53,7 @@
 			"Grade":0,
 			"UpgradeSuccessRate":100,
 			"Level":1,
+			"dropChance":20,
 			"Stats":
 			{
 				"Defensa":8,
@@ -70,6 +73,7 @@
 			"Grade":0,
 			"UpgradeSuccessRate":100,
 			"Level":1,
+			"dropChance":20,
 			"Stats":
 			{
 				"Defensa":20,
@@ -89,6 +93,7 @@
 			"Grade":0,
 			"UpgradeSuccessRate":100,
 			"Level":1,
+			"dropChance":20,
 			"Stats":
 			{
 				"Defensa":10,
@@ -108,6 +113,7 @@
 			"Grade":0,
 			"UpgradeSuccessRate":100,
 			"Level":1,
+			"dropChance":20,
 			"Stats":
 			{
 				"Defensa":8,
@@ -127,6 +133,7 @@
 			"Grade":0,
 			"UpgradeSuccessRate":100,
 			"Level":1,
+			"dropChance":20,
 			"Stats":
 			{
 				"Defensa":20,
@@ -146,6 +153,7 @@
 			"Grade":0,
 			"UpgradeSuccessRate":100,
 			"Level":1,
+			"dropChance":20,
 			"Stats":
 			{
 				"Defensa":10,
@@ -164,6 +172,7 @@
 			"Grade":0,
 			"UpgradeSuccessRate":100,
 			"Level":1,
+			"dropChance":20,
 			"Stats":
 			{
 				"Defensa":8,
@@ -183,6 +192,7 @@
 			"Grade":0,
 			"UpgradeSuccessRate":100,
 			"Level":1,
+			"dropChance":20,
 			"Stats":
 			{
 				"Defensa":20,
@@ -202,6 +212,7 @@
 			"Grade":0,
 			"UpgradeSuccessRate":100,
 			"Level":1,
+			"dropChance":20,
 			"Stats":
 			{
 				"Defensa":10,
@@ -221,6 +232,7 @@
 			"Grade":0,
 			"UpgradeSuccessRate":100,
 			"Level":1,
+			"dropChance":20,
 			"Stats":
 			{
 				"Defensa":8,
@@ -240,6 +252,7 @@
 			"Grade":0,
 			"UpgradeSuccessRate":100,
 			"Level":1,
+			"dropChance":20,
 			"Stats":
 			{
 				"Defensa":20,
@@ -259,6 +272,7 @@
 			"Grade":0,
 			"UpgradeSuccessRate":100,
 			"Level":1,
+			"dropChance":20,
 			"Stats":
 			{
 				"Defensa":10,
@@ -270,7 +284,8 @@
 		{
 			"ID" : "055",
 			"Name":"Chancletas",
-			"Descripcion":"",
+			"Descripcion":"
+			,
 			"PriceSell":300,
 			"PriceBuy":500,
 			"PriceRepair":100,
@@ -278,6 +293,7 @@
 			"Grade":0,
 			"UpgradeSuccessRate":100,
 			"Level":1,
+			"dropChance":20,
 			"Stats":
 			{
 				"Defensa":8,

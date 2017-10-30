@@ -13,6 +13,11 @@ public class JSONLoader : MonoBehaviour {
     public Arma[] armasArray;
     public Armadura[] armadurasArray;
     public Joyeria[] joyeriaArray;
+    public Quest[] questArray;
+    public Objetivo[] objetivoArray;
+    public Reward[] rewardArray;
+    public Dialog[] dialogArray;
+    public Sentences[] sentencesArray;
 
     private void Awake()
     {
@@ -33,6 +38,21 @@ public class JSONLoader : MonoBehaviour {
 		
         string jsonJoyeria = LoadText("Joyeria.txt");
         joyeriaArray = LoadJsonJoyeria(jsonJoyeria);
+
+        string jsonQuest = LoadText("Quest.txt");
+        playerArray = LoadJsonPersonaje(jsonPlayers);
+
+        string jsonObjetivo = LoadText("Objetivo.txt");
+        playerArray = LoadJsonPersonaje(jsonPlayers);
+
+        string jsonReward = LoadText("Reward.txt");
+        playerArray = LoadJsonPersonaje(jsonPlayers);
+
+        string jsonDialog = LoadText("Dialog.txt");
+        playerArray = LoadJsonPersonaje(jsonPlayers);
+
+        string jsonSentences = LoadText("Sentences.txt");
+        playerArray = LoadJsonPersonaje(jsonPlayers);
     }
 
     private string LoadText(string _path)
@@ -278,5 +298,55 @@ public class JSONLoader : MonoBehaviour {
         }
 
         return joyeriaArray;
+    }
+
+    private Quest[] LoadJsonQuest(string _json)
+    {
+        JSONObject jsonObj = new JSONObject(_json);
+        JSONObject jsonObjAux = jsonObj;
+        int questCount = jsonObjAux.GetField("Quest").Count;
+        questArray = new Quest[questCount];
+
+        for (int i = 0; i < questCount; i++)
+        {
+            jsonObjAux = jsonObj.GetField("Quest");
+            questArray[i] = new Quest();
+            questArray[i].description = (jsonObjAux[i].HasField("Description")) ? jsonObjAux[i].GetField("Description").str : string.Empty;
+            questArray[i].ID = (jsonObjAux[i].HasField("ID")) ? jsonObjAux[i].GetField("ID").n : 0;
+            questArray[i].sideQuest = (jsonObjAux[i].HasField("SideQuest")) ? jsonObjAux[i].GetField("SideQuest").n : 0;
+            questArray[i].nextQuest = (jsonObjAux[i].HasField("NextQuest")) ? jsonObjAux[i].GetField("NextQuest").n : 0;
+
+        }
+
+        return questArray;
+    }
+
+    private Reward[] LoadJsonReward(string _json)
+    {
+        JSONObject jsonObj = new JSONObject(_json);
+        JSONObject jsonObjAux = jsonObj;
+        int rewardCount = jsonObjAux.GetField("Reward").Count;
+        rewardArray = new Reward[rewardCount];
+
+        for (int i = 0; i < rewardCount; i++)
+        {
+            jsonObjAux = jsonObj.GetField("Reward");
+            rewardArray[i] = new Reward();
+            rewardArray[i].xpReward = (jsonObjAux[i].HasField("xpReward")) ? jsonObjAux[i].GetField("xpReward").n : 0;
+            rewardArray[i].moneyReward = (jsonObjAux[i].HasField("moneyReward")) ? jsonObjAux[i].GetField("moneyReward").n : 0;
+            if (jsonObj.HasField("Stats"))
+            {
+                jsonObjAux = jsonObjAux.GetField("itemReward");
+                rewardArray[i].itemReward = new float[jsonObjAux.Count];
+                for(int j = 0; j < jsonObjAux.Count; j++)
+                {
+                    rewardArray[j].itemReward[j] = (jsonObjAux[j].n != null) ? jsonObjAux[j].n : 0;
+
+                }
+            }
+
+        }
+
+        return rewardArray;
     }
 }

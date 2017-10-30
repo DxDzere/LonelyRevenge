@@ -5,12 +5,13 @@ using UnityEngine;
 public class Inventario : MonoBehaviour
 {
 	public static Inventario inv = null;
-    public InventoryItems[][] _items = new InventoryItems[7][];
+    public List<List<InventoryItems>> _items;
+    //public InventoryItems[][] _items = new InventoryItems[7][];
 
-    public struct InventoryItems
+    public class InventoryItems
     {
         public Items item;
-        public int count;
+        public int itemCant;
     }
 
 	void Awake()
@@ -21,39 +22,42 @@ public class Inventario : MonoBehaviour
 			Destroy (gameObject);
 		}
 		DontDestroyOnLoad (gameObject);
+        _items = new List<List<InventoryItems>>();
 	}
 
 	void Start()
 	{
-		for (int i = 0; i < _items.Length; i++)
+		for (int i = 0; i < _items.Count; i++)
 		{
-			_items [i] = new InventoryItems[42];
+            _items[i] = new List<InventoryItems>();
 		}
 	}
 
 	public void addItem(Items item)
     {
-        for (int i = 0; i<_items.Length; i++)
+        for (int i = 0; i<_items.Count; i++)
         {
-            for(int j = 0; j <_items[i].Length; j++)
+            for(int j = 0; j <_items[i].Count; j++)
             {
                 Items auxItem = _items[i][j].item;
-
-				if (auxItem.GetType () == typeof(Consumibles)) 
-				{
-					if (_items [i] [j].item == null) {
-						_items [i] [j].item = item;
-						break;
-					} else if (_items [i] [j].item == item && _items[i][j].count<100) 
-					{
-						_items [i] [j].count++;
-						break;
-					}
-				} else if (_items [i] [j].item == null) 
-				{
-					_items [i] [j].item = item;
-					break;
-				}
+                if (_items[i][j]==_items[i][42])
+                {
+                    if (auxItem.GetType() == typeof(Consumibles))
+                    {
+                        if (_items[i][j].item == null) {
+                            _items[i][j].item = item;
+                            break;
+                        } else if (_items[i][j].item == item && _items[i][j].itemCant < 100)
+                        {
+                            _items[i][j].itemCant++;
+                            break;
+                        }
+                    } else if (_items[i][j].item == null)
+                    {
+                        _items[i][j].item = item;
+                        break;
+                    }
+                }
             }
         }
 	}
@@ -66,6 +70,11 @@ public class Inventario : MonoBehaviour
     public void Throw(int tabIndex, int itemIndex)
     {
         _items[tabIndex][itemIndex].item.Throw();
+        _items[tabIndex][itemIndex].itemCant -= 1;
+        if(_items[tabIndex][itemIndex].itemCant == 0)
+        {
+            _items[tabIndex].RemoveAt(itemIndex);
+        }
     }
 
     public void Sell(int tabIndex, int itemIndex, PlayerBase _player)

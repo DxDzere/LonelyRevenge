@@ -9,6 +9,7 @@ public class Items : MonoBehaviour {
     public float priceSell;
     public float priceBuy;
 	public float ID;
+    public float dropChance;
     
     public virtual void Use(PlayerBase _player)
     {

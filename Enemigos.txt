@@ -1,0 +1,167 @@
+{
+	"Personajes":
+	{
+		"Draconian":
+		{
+			"Name":"Draconian",
+			"Descripcion":"Es un ser mitad dragon mitad humano, son enormes y muy fuertes, pero son bastante lentos",
+			"Kind":"Draconian",
+			"Money":0,
+			"Stats":
+			{
+				"PhysicalDamage":30,
+				"HabilityDamage":0,
+				"Defense":50,
+				"AttackSpeed":5,
+				"MovementSpeed":4,
+				"HealthCap":280,
+				"ManaCap":0,
+				"StaminaCap":0
+			}
+		},
+		"Araneo":
+		{
+			"Name":"Araneo",
+			"Descripcion":"Son arañas de un tamaño descomunal, muy veloces y altamente venenosas y agresivas",
+			"Kind":"Araneo",
+			"Money":0,
+			"Stats":
+			{
+				"PhysicalDamage":6,
+				"HabilityDamage":0,
+				"Defense":10,
+				"AttackSpeed":6,
+				"MovementSpeed":7,
+				"HealthCap":75,
+				"ManaCap":0,
+				"StaminaCap":0
+			}
+		},
+		"Zephyr":
+		{
+			"Name":"Zephyr",
+			"Descripcion":"Tienen aspecto humano, aunque son mucho mas fuertes y atacan junto a sus ninfas",
+			"Kind":"Zephyr",
+			"Money":0,
+			"Stats":
+			{
+				"PhysicalDamage":13,
+				"HabilityDamage":0,
+				"Defense":22,
+				"AttackSpeed":5,
+				"MovementSpeed":6,
+				"HealthCap":150,
+				"ManaCap":0,
+				"StaminaCap":0
+			}
+		},
+		"Nymph of the Forest":
+		{
+			"Name":"Nymph of the Forest",
+			"Descripcion":"Son las acompañantes de los céfiros, son bastante rapidas pero muy debiles",
+			"Kind":"Nymph of the Forest",
+			"Money":0,
+			"Stats":
+			{
+				"PhysicalDamage":10,
+				"HabilityDamage":0,
+				"Defense":17,
+				"AttackSpeed":7,
+				"MovementSpeed":7,
+				"HealthCap":100,
+				"ManaCap":0,
+				"StaminaCap":0
+			}
+		},
+		"Fallen Angel":
+		{
+			"Name":"Fallen Angel",
+			"Descripcion":"Es un angel caido en busca de muerte y destruccion. Son rapidos y muy hostiles",
+			"Kind":"Fallen Angel",
+			"Money":0,
+			"Stats":
+			{
+				"PhysicalDamage":18,
+				"HabilityDamage":0,
+				"Defense":28,
+				"AttackSpeed":6,
+				"MovementSpeed":6,
+				"HealthCap":210,
+				"ManaCap":0,
+				"StaminaCap":0
+			}
+		},
+		"Griffin":
+		{
+			"Name":"Griffin",
+			"Descripcion":"Cabeza de aguila, cuerpo de leon y una muy mala actitud, definitivamente no querras cruzarte con ellos",
+			"Kind":"Griffin",
+			"Money":0,
+			"Stats":
+			{
+				"PhysicalDamage":23,
+				"HabilityDamage":0,
+				"Defense":35,
+				"AttackSpeed":5,
+				"MovementSpeed":5,
+				"HealthCap":230,
+				"ManaCap":0,
+				"StaminaCap":0
+			}
+		},
+		"Minotaur":
+		{
+			"Name":"Minotaur",
+			"Descripcion":"Grandes y musculosos, son bestias con cuerpo humano y cabeza de toro",
+			"Kind":"Minotaur",
+			"Money":0,
+			"Stats":
+			{
+				"PhysicalDamage":20,
+				"HabilityDamage":0,
+				"Defense":40,
+				"AttackSpeed":4,
+				"MovementSpeed":5,
+				"HealthCap":250,
+				"ManaCap":0,
+				"StaminaCap":0
+			}
+		},
+		"Death Knight":
+		{
+			"Name":"Death Knight",
+			"Descripcion":"Es un caballero no muerto, no se sabe nada de ellos, ni de donde vinieron",
+			"Kind":"Death Knight",
+			"Money":0,
+			"Stats":
+			{
+				"PhysicalDamage":40,
+				"HabilityDamage":0,
+				"Defense":60,
+				"AttackSpeed":5,
+				"MovementSpeed":4,
+				"HealthCap":300,
+				"ManaCap":0,
+				"StaminaCap":0
+			}
+		},
+		"Goblin":
+		{
+			"Name":"Goblin",
+			"Descripcion":"Unos molestos enanos verdes que se la pasan corriendo y golpeando cosas",
+			"Kind":"Goblin",
+			"Money":0,
+			"Stats":
+			{
+				"PhysicalDamage":3,
+				"HabilityDamage":0,
+				"Defense":5,
+				"AttackSpeed":7,
+				"MovementSpeed":8,
+				"HealthCap":50,
+				"ManaCap":0,
+				"StaminaCap":0
+			}
+		}
+	}
+},
