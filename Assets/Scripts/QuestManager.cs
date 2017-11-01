@@ -5,9 +5,36 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour {
 
     public List<Quest> _listQuest;
+    public List<Quest> _listSecQuest;
+    public List<Quest> _listInvisbleQuest;
 
-    // Update is called once per frame
-    void Update () {
+    public void AddSideQuest()
+    {
+
+    }
+
+    public void RemoveSideQuest()
+    {
+
+    }
+
+    public void AddQuest()
+    {
+
+    }
+
+    public void RemoveQuest()
+    {
+
+    }
+
+    public void AddReward()
+    {
+
+    }
+
+    void Update ()
+    {
 		
 	}
 }
