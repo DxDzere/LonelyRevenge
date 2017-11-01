@@ -8,4 +8,7 @@ public class Quest : MonoBehaviour
     public float sideQuest;
     public string description;
     public float nextQuest;
+
+
+
 }

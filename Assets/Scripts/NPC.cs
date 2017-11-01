@@ -7,6 +7,10 @@ public class NPC : CharacterBasic
     //ia
     //quest
     //interaccion
+    public float questNPC;
+    public float previousQuest;
+
+
 
 
 }
