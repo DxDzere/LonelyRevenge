@@ -60,7 +60,6 @@ public class PlayerBase : CharacterBasic
 		xpCap=xpCap*lvl;
 		if (lvl == lvlCap)
 		{
-			xp=xpCap;
             xpCap+= xpCap*0.5f;
             atributesPoint += 3;
         }

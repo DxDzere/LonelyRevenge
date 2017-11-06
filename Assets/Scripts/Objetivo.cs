@@ -2,9 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Objetivo : MonoBehaviour {
-
+public class Objetivo : MonoBehaviour
+{
     public string type; 
     public int cantidad;
     public string c;
+
+
+    public void CheckQuest()
+    {
+        
+    }
 }
