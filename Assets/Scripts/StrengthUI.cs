@@ -5,17 +5,17 @@ using UnityEngine.UI;
 
 public class StrengthUI : MonoBehaviour {
 
-    public Text nameText;
-    public Text classhText;
-    public Text levelText;
-    public Text expText;
-    public Text atributsPointsText;
-    public Text strengthText;
-    public Text dexterityText;
-    public Text vitalityText;
-    public Text energyText;
-    public Text goldText;
-    public PlayerBase player;
+    [SerializeField] private Text nameText;
+    [SerializeField] private Text levelText;
+    [SerializeField] private Text expText;
+    [SerializeField] private Text atributsPointsText;
+    [SerializeField] private Text classhText;
+    [SerializeField] private Text strengthText;
+    [SerializeField] private Text dexterityText;
+    [SerializeField] private Text vitalityText;
+    [SerializeField] private Text energyText;
+    [SerializeField] private Text goldText;
+    [SerializeField] private PlayerBase player;
 
 	// Use this for initialization
 	void Start ()

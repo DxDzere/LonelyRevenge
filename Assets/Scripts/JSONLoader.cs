@@ -39,7 +39,7 @@ public class JSONLoader : MonoBehaviour {
         string jsonJoyeria = LoadText("Joyeria.txt");
         joyeriaArray = LoadJsonJoyeria(jsonJoyeria);
 
-        string jsonQuest = LoadText("Quest.txt");
+        /*string jsonQuest = LoadText("Quest.txt");
         playerArray = LoadJsonPersonaje(jsonPlayers);
 
         string jsonObjetivo = LoadText("Objetivo.txt");
@@ -52,7 +52,7 @@ public class JSONLoader : MonoBehaviour {
         playerArray = LoadJsonPersonaje(jsonPlayers);
 
         string jsonSentences = LoadText("Sentences.txt");
-        playerArray = LoadJsonPersonaje(jsonPlayers);
+        playerArray = LoadJsonPersonaje(jsonPlayers);*/
     }
 
     private string LoadText(string _path)
@@ -321,7 +321,7 @@ public class JSONLoader : MonoBehaviour {
         return questArray;
     }
 
-    private Reward[] LoadJsonReward(string _json)
+   private Reward[] LoadJsonReward(string _json)
     {
         JSONObject jsonObj = new JSONObject(_json);
         JSONObject jsonObjAux = jsonObj;
@@ -348,5 +348,12 @@ public class JSONLoader : MonoBehaviour {
         }
 
         return rewardArray;
+    }
+
+    public PlayerBase ReturnPlayerBase(int pos, PlayerBase playerReturn)
+    {
+        playerReturn = playerArray[pos];
+        return playerReturn;
+;
     }
 }
