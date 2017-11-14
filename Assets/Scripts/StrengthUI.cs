@@ -36,9 +36,4 @@ public class StrengthUI : MonoBehaviour {
         energyText.text = Mathf.RoundToInt(player.atributes.energy).ToString();
         goldText.text = Mathf.RoundToInt(player.money).ToString();
     }
-
-    private void Update()
-    {
-        UpdateText();
-    }
 }

@@ -352,8 +352,31 @@ public class JSONLoader : MonoBehaviour {
 
     public PlayerBase ReturnPlayerBase(int pos, PlayerBase playerReturn)
     {
-        playerReturn = playerArray[pos];
+        playerReturn.name = playerArray[pos].name;
+        playerReturn.description = playerArray[pos].description;
+        playerReturn.kind = playerArray[pos].kind;
+        playerReturn.money = playerArray[pos].money;
+        playerReturn.xp = playerArray[pos].xp;
+        playerReturn.xpCap = playerArray[pos].xpCap;
+        playerReturn.lvl = playerArray[pos].lvl;
+        playerReturn.atributesPoint = playerArray[pos].atributesPoint;
+        playerReturn.playerBaseStats.physicalDamage = playerArray[pos].playerBaseStats.physicalDamage;
+        playerReturn.playerBaseStats.physicalDamage = playerArray[pos].playerBaseStats.physicalDamage;
+        playerReturn.playerBaseStats.abilityDamage = playerArray[pos].playerBaseStats.abilityDamage;
+        playerReturn.playerBaseStats.defense = playerArray[pos].playerBaseStats.defense;
+        playerReturn.playerBaseStats.attackSpeed = playerArray[pos].playerBaseStats.attackSpeed;
+        playerReturn.playerBaseStats.movementSpeed = playerArray[pos].playerBaseStats.movementSpeed;
+        playerReturn.playerBaseStats.healthCap = playerArray[pos].playerBaseStats.healthCap;
+        playerReturn.playerBaseStats.manaCap = playerArray[pos].playerBaseStats.manaCap;
+        playerReturn.playerBaseStats.staminaCap = playerArray[pos].playerBaseStats.staminaCap;
+        playerReturn.atributes.strength = playerArray[pos].atributes.strength;
+        playerReturn.atributes.vitality = playerArray[pos].atributes.vitality;
+        playerReturn.atributes.dexterity = playerArray[pos].atributes.dexterity;
+        playerReturn.atributes.energy = playerArray[pos].atributes.energy;
+        playerReturn.atributes.strengthCap = playerArray[pos].atributes.strengthCap;
+        playerReturn.atributes.vitalityCap = playerArray[pos].atributes.vitalityCap;
+        playerReturn.atributes.dexterityCap = playerArray[pos].atributes.dexterityCap;
+        playerReturn.atributes.energyCap = playerArray[pos].atributes.energyCap;
         return playerReturn;
-;
     }
 }

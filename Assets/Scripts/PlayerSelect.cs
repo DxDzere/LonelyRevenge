@@ -5,15 +5,15 @@ using UnityEngine;
 public class PlayerSelect : MonoBehaviour
 {
     int posicionPLayerBase = 0;
-    PlayerBase player;
+    PlayerBase player = new PlayerBase();
     JSONLoader functions;
 
     private void Start()
     {
-        functions.ReturnPlayerBase(posicionPLayerBase, player);
+        player = functions.ReturnPlayerBase(posicionPLayerBase, player);
     }
 
-    public void RightButton ()
+    public void RightButton()
     {
         if (posicionPLayerBase == 5)
         {
@@ -24,7 +24,7 @@ public class PlayerSelect : MonoBehaviour
             posicionPLayerBase++;
         }
 
-        functions.ReturnPlayerBase(posicionPLayerBase, player);
+        player = functions.ReturnPlayerBase(posicionPLayerBase, player);
     }
 
     public void LeftBotton()
@@ -38,11 +38,12 @@ public class PlayerSelect : MonoBehaviour
             posicionPLayerBase--;
         }
 
-        functions.ReturnPlayerBase(posicionPLayerBase, player);
+        player = functions.ReturnPlayerBase(posicionPLayerBase, player);
     }
 
     public void SelectBotton()
     {
-        
+        string characterPlayer = JsonUtility.ToJson(player, true);
+        Debug.Log(characterPlayer);
     }
 }
