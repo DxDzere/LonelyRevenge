@@ -27,9 +27,7 @@ public class PlayerBase : CharacterBasic
         public float vitality;
         public float dexterity;
         public float energy;
-        public float strengthCap;
         public float vitalityCap;
-        public float dexterityCap;
         public float energyCap;
     }
     //controller
@@ -88,7 +86,7 @@ public class PlayerBase : CharacterBasic
 
     public void strengthUp()
     {
-        if (atributesPoint > 0 && atributes.strength < atributes.strengthCap)
+        if (atributesPoint > 0)
         {
             atributes.strength += 1;
             atributesPoint -= 1;
@@ -99,7 +97,7 @@ public class PlayerBase : CharacterBasic
 
     public void dexterityUp()
     {
-        if (atributesPoint > 0 && atributes.dexterity < atributes.dexterityCap)
+        if (atributesPoint > 0)
         {
             atributes.dexterity += 1;
             atributesPoint -= 1;

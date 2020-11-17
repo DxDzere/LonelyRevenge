@@ -105,9 +105,9 @@ public class JSONLoader : MonoBehaviour {
                 playerArray[i].atributes.vitality = (jsonObjAux.HasField("Vitality")) ? jsonObjAux.GetField("Vitality").n : 1;
                 playerArray[i].atributes.dexterity = (jsonObjAux.HasField("Dexterity")) ? jsonObjAux.GetField("Dexterity").n : 1;
                 playerArray[i].atributes.energy = (jsonObjAux.HasField("Energy")) ? jsonObjAux.GetField("Energy").n : 1;
-                playerArray[i].atributes.strengthCap = (jsonObjAux.HasField("StrengthCap")) ? jsonObjAux.GetField("StrengthCap").n : 150;
+ //               playerArray[i].atributes.strengthCap = (jsonObjAux.HasField("StrengthCap")) ? jsonObjAux.GetField("StrengthCap").n : 150;
                 playerArray[i].atributes.vitalityCap = (jsonObjAux.HasField("VitalityCap")) ? jsonObjAux.GetField("VitalityCap").n : 150;
-                playerArray[i].atributes.dexterityCap = (jsonObjAux.HasField("DexterityCap")) ? jsonObjAux.GetField("DexterityCap").n : 150;
+ //               playerArray[i].atributes.dexterityCap = (jsonObjAux.HasField("DexterityCap")) ? jsonObjAux.GetField("DexterityCap").n : 150;
                 playerArray[i].atributes.energyCap = (jsonObjAux.HasField("EnergyCap")) ? jsonObjAux.GetField("EnergyCap").n : 150;
             }
         }
@@ -373,9 +373,9 @@ public class JSONLoader : MonoBehaviour {
         playerReturn.atributes.vitality = playerArray[pos].atributes.vitality;
         playerReturn.atributes.dexterity = playerArray[pos].atributes.dexterity;
         playerReturn.atributes.energy = playerArray[pos].atributes.energy;
-        playerReturn.atributes.strengthCap = playerArray[pos].atributes.strengthCap;
+ //       playerReturn.atributes.strengthCap = playerArray[pos].atributes.strengthCap;
         playerReturn.atributes.vitalityCap = playerArray[pos].atributes.vitalityCap;
-        playerReturn.atributes.dexterityCap = playerArray[pos].atributes.dexterityCap;
+ //       playerReturn.atributes.dexterityCap = playerArray[pos].atributes.dexterityCap;
         playerReturn.atributes.energyCap = playerArray[pos].atributes.energyCap;
         return playerReturn;
     }
